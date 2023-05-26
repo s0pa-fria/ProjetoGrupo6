@@ -421,7 +421,7 @@
 }
 
 body {
-    background-image: url(Imagens/Cia-Athletica-Nacional-O-que-e-CrossFit-Homem-sem-caminha-lancando-pneus-pesados-na-academia.jpg);
+    background-image: url("Imagens/Cia-Athletica-Nacional-O-que-e-CrossFit-Homem-sem-caminha-lancando-pneus-pesados-na-academia.jpg");
     opacity: 30;
 }
 
