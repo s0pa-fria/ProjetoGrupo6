@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content:flex-start;
+    justify-content: center;
+}
+.esquerda{
+    width: 35%;
+    height: 100vh;
+    background: linear-gradient(-1deg, black, #006C8A);
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.direita{
+    width: 35%;
+    height: 100vh;
+    background: linear-gradient(-1deg, black, #006C8A);
+    display: none;
+    order: 4;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.img_esquerda{
+    width: 65%;
+    height: 100vh;
+    display: none;
+    order: 3;
+    background-image: url(Imagens/Cia-Athletica-Nacional-O-que-e-CrossFit-Homem-sem-caminha-lancando-pneus-pesados-na-academia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img_direita{
+    width: 65%;
+    height: 100vh;
+    background-image: url(Imagens/ImagemSprint.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*Tela de login*/
+.tela_login{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    width: 72%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.416);
+    border-radius: 15px;     
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.login h1{
+    text-align: center;
+    order: 1;
+    width: 100%;
+}
+.linha{
+    width: 220px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #006C8A;
+    order: 2;
+    margin: 30px auto;
+}
+.campos{
+    order: 3;
+    width: 80%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+}
+.campos input{
+    width: 90%;
+    height: 46px;
+    padding: 0 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+}
+.campos input:focus{
+    border-color: #006C8A;
+}
+.bt_login{
+    width: 80%;
+    height: 42px;
+    text-align: center;
+    background-color:#006C8A;
+    color: white;
+    border-radius: 20px;
+    order: 4;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.bt_login:hover {
+    color: #006C8A;
+    background-color: white;
+}
+
+/*tela de cadastro*/
+.tela_cadastro{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.cadastro{
+    width: 85%;
+    height: 550px;
+    background-color: rgba(255, 255, 255, 0.416);
+    border-radius: 15px;          
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}.linha_cad{
+    background-color: #006C8A;
+}
+.campos_cadastro{
+    order: 3;
+    width: 90%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-items: stretch;
+    justify-content: center;
+}
+.campos_cadastro input{
+    width: 50px;
+    height: 38px;
+    padding: 0 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+}
+.campos_cadastro input:focus{
+    border-color: #006C8A;
+}
+.nome{
+    width:40% !important;
+    margin: 4px;
+}
+.snome{
+    width:40% !important;
+}
+.user{
+    width: 50% !important;
+
+}
+.senha{
+    width: 39% !important;
+    margin: 2px;
+}
+.tel{
+    width: 15% !important;
+}
+.regiao{
+    width: 10% !important;
+    margin: 8px;
+}
+.telefone{
+    width: 48% !important;
+}
+.cadastro h1{
+    text-align: center;
+    order: 1;
+    width: 100%;
+    font-size: 26px;
+}
+.cadastro h3{
+    width: 35%;
+    height: 38px;
+    position: relative;
+    top: 10%;
+    font-size: 16px;
+    text-decoration: none;
+    font-style: none;
+    margin: 3px;
+}
+.aviso{
+    width: 92%;
+    font-size: 12px;
+    text-decoration: none;
+    font-style: none;
+    margin: 4px;
+    text-align: left;   
+}
+.bt_cadastrar{
+    width: 39%;
+    height: 40px;
+    background-color: #006C8A;
+    color: white;
+    border-radius: 20px;
+    order: 4;
+    cursor: pointer;
+}
+
+.bt_cadastrar:hover {
+    color: #006C8A;
+    background-color: white;
+}
+
+.bt_cadastrar h3{
+    width: 100%;
+    font-size: 15px;
+    position: relative;
+    top: 15%;
+    text-align: center;
+}
+.bt_login_cad{
+    width: 40%;
+    height: 42px;
+    color: 006C8A;
+    border-radius: 3px;
+    order: 4;
+    cursor: pointer;
+}
+.bt_login_cad h3{
+    width: 100%;
+    font-size: 12px;
+    position: relative;
+    top: 20%;
+    text-align: center;
+}
+@media all and (min-width: 1px) and (max-width: 768px){
+    .esquerda{
+        width: 100%;
+        background-color: rgb(33,33,33,0);
+        z-index: 2;
+    }
+    .tela_login{
+        width: 100%;
+        height: 400px;
+        z-index: 3;
+    }
+    .login{
+        color: white;
+        width: 90%;
+        height: 380px;
+        background-color: rgb(33,33,33,0.9);
+        border-radius: 4px;
+    }
+    .campos{
+        height: 150px;
+    }
+    .img_direita{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    /*Tela de cadastro Responsiva*/
+
+    .direita{
+        width: 100%;
+        background-color: rgb(33,33,33,0);
+        z-index: 2;
+    }
+    .tela_cadastro{
+        width: 100%;
+        height: 100vh;
+        z-index: 3;
+    }
+    .cadastro{
+        color: white;
+        width: 90%;
+        height: 90vh;
+        background-color: rgb(33,33,33,0.9);
+        border-radius: 4px;
+    }
+    .img_esquerda{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .campos_cadastro{
+        order: 3;
+        width: 90%;
+        height: 400px;
+    }
+    .campos_cadastro input{
+        height: 38px;
+        padding: 0 12px;
+        border: 2px solid #ddd;
+        border-radius: 4px;
+        outline: 0;
+        transition: .2s;
+        margin-top: 20px;
+    }
+    .campos_cadastro input:focus{
+        border-color: #006C8A;
+    }
+    .nome{
+        width:90% !important;
+    }
+    .snome{
+        width:90% !important;
+    }
+    .user{
+        width: 50% !important;
+    
+    }
+    .senha{
+        width: 39% !important;
+        margin: 2px;
+    }
+    .tel{
+        width: 15% !important;
+    }
+    .regiao{
+        width: 10% !important;
+        margin: 8px;
+    }
+    .telefone{
+        width: 48% !important;
+    }
+    .cadastro h1{
+        text-align: center;
+        order: 1;
+        width: 100%;
+        font-size: 26px;
+    }
+    .cadastro h3{
+        width: 35%;
+        height: 38px;
+        position: relative;
+        top: 10%;
+        font-size: 16px;
+        text-decoration: none;
+        font-style: none;
+        margin: 3px;
+    }
+    .aviso{
+        width: 95%;
+        font-size: 12px;
+        text-decoration: none;
+        font-style: none;
+        margin: 4px;
+        text-align: left;   
+    }
+    .bt_cadastrar{
+        width: 39%;
+        height: 40px;
+        background-color: 006C8A;
+        color: white;
+        border-radius: 3px;
+        order: 4;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    .bt_cadastrar h3{
+        width: 90%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .bt_login_cad{
+        width: 40%;
+        height: 42px;
+        color: 006C8A;
+        border-radius: 3px;
+        order: 4;
+        cursor: pointer;
+    }
+    .bt_login_cad h3{
+        width: 100%;
+        font-size: 12px;
+        position: relative;
+        top: 20%;
+        text-align: center;
+    }
+}
+
+body {
+    background-image: url(Imagens/Cia-Athletica-Nacional-O-que-e-CrossFit-Homem-sem-caminha-lancando-pneus-pesados-na-academia.jpg);
+    opacity: 30;
+}
+
