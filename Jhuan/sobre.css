@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+    }
+
+    .paragrafo{
+        font-size: 30px;
+    }
+
+    .titulo{
+    color: #006C8A;
+    }
+
+    .saiba{
+        text-decoration-line: underline;
+    }
