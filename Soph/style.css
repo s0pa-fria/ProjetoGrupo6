@@ -105,7 +105,14 @@ p{
 }
 /* ___________________________________________________________________ */
 /* Categorias*/
+.titulo{
+    text-align: center;
+    position: relative;
+    color: #000;
+    margin: 0 auto 80px;
+    line-height: 60px;
 
+}
 .title{
     text-align: center;
     margin: 0 auto 80px;
@@ -128,6 +135,20 @@ p{
 h4{
     color: #555;
     font-weight: normal;
+}
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    flex-basis: 25%;
+    min-width: 50px;
+    margin-bottom: 30px;
+    margin-left: 60px;
+}
+
+.col-3 img{
+    width: 60%;
 }
 /* ___________________________________________________________________ */
 /* Footer*/
