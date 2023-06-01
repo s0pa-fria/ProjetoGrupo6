@@ -1,0 +1,39 @@
+body{
+    position: relative;
+}
+
+.contato{
+    position: absolute;
+    background-color: black;
+    color: #006C8A;
+    top: 30%;
+    left: 3%;
+    width: 350px;
+    height: 300px;
+    padding-left: 20px;
+    font-family: 'Anton';
+font-style: normal;
+font-weight: 10;
+font-size: 25px;
+line-height: 60px;
+align-items: center;
+}
+
+.imagem{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 435px;
+
+position: absolute;
+width: 500px;
+height: 52px;
+left: 0px;
+top: 883px;
+}
