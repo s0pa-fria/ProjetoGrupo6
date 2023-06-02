@@ -1,3 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=swap');
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Anton", sans-serif;
+}
+
+
+/* Header */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #005370;
+    transition: 0.5s;
+}
+.log{
+    margin-left: 10px;
+}
+
+li a{
+    text-decoration: bold-bolder;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.header{
+    /* background: radial-gradient(#fff, #ffd6d6); */
+    background: linear-gradient(to right, #017a9baf, #005370);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .slide img{
+    width: 1100px;
+    height: 700px;
+    padding-top: 30px;
+    margin-left: 230px;
+} */
+
+.header row{
+    margin-top: 70px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    padding: 30px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s, color 0.3s, opacity 1s;
+}
+.btn:hover{
+    background: #006C8A, #fff;
+    opacity: 80% #fff;
+}
+
+/* ___________________________________________________________________ */
+/* Header Responsividade (Mobile) */
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
 .titulo{
     position: absolute;
     width: 1000px;
@@ -5,7 +129,7 @@
     left: 450px;
     top: 40px;
     
-    font-family: 'Anton';
+    font-family: 'Anton', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
