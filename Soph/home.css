@@ -52,20 +52,12 @@ p{
     color: #555;
 }
 .header{
-    /* background: radial-gradient(#fff, #ffd6d6); */
     background: linear-gradient(to right, #017a9baf, #005370);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-/* .slide img{
-    width: 1100px;
-    height: 700px;
-    padding-top: 30px;
-    margin-left: 230px;
-} */
-
 .header row{
     margin-top: 70px;
 }

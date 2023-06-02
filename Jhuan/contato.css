@@ -1,16 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
 
 /* Geral */
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 body{
     font-family: 'Anton', sans-serif;
 }
-
+/* ___________________________________________________________________ */
 /* Header */
 
 .navbar{
@@ -45,7 +44,6 @@ nav ul li a:hover{
 .log{
     margin-left: 10px;
 }
-
 li a{
     text-decoration: bold-bolder;
     color: #555;
@@ -54,19 +52,12 @@ p{
     color: #555;
 }
 .header{
-    /* background: radial-gradient(#fff, #ffd6d6); */
     background: linear-gradient(to right, #017a9baf, #005370);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-/* .slide img{
-    width: 1100px;
-    height: 700px;
-    padding-top: 30px;
-    margin-left: 230px;
-} */
 
 .header row{
     margin-top: 70px;
@@ -113,6 +104,12 @@ p{
 
 /* ___________________________________________________________________ */
 /* Header Responsividade (Mobile) */
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
 
 .menu-icon{
     width: 28px;
