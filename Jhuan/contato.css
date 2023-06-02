@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton:wght@400;&family=Montserrat&family=Noto+Serif&display=swap');
+
 /* Geral */
 
 *{
@@ -16,17 +18,19 @@ body{
     position: absolute;
     background-color: black;
     color: #006C8A;
+    opacity: 80%;
     top: 30%;
     left: 3%;
     width: 350px;
     height: 300px;
     padding-left: 20px;
-    font-family: 'Anton';
-font-style: normal;
-font-weight: 10;
-font-size: 25px;
-line-height: 60px;
-align-items: center;
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 10;
+    font-size: 25px;
+    line-height: 60px;
+    align-items: center;
+    padding-top: 30px;
 }
 
 .imagem{
@@ -34,9 +38,9 @@ align-items: center;
     height: 100%;
 }
 
-
+/* ___________________________________________________________________ */
+/* Footer*/
 .footer{
-
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
@@ -67,9 +71,7 @@ align-items: center;
 }
 .footer-col-3, .footer-col-4{
     flex-basis: 12%;
-    text-align: right;
-    padding-right: 100px;
-    
+    text-align: center;
 }
 ul{
     list-style: none;
