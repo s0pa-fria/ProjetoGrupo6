@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=swap');
+
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Anton", sans-serif;
+}
+
+.titulo{
+    position: absolute;
+    width: 1000px;
+    height: 100px;
+    left: 450px;
+    top: 40px;
+    
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 96px;
+    
+    color: #006C8A;
+    
+}
+
+.subtitulo{
+    position: absolute;
+    width: 441px;
+    height: 36px;
+    left: 550px;
+    top: 150px;
+    
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    
+    color: #FFFFFF;
+}
+
+body{
+    background-color: black;
+}
+
+.futebol{
+position: absolute;
+width: 290px;
+height: 372.43px;
+left: 1038px;
+top: 420px;
+
+background: url(futebol\ 1.png);
+}
+
+.basquete{
+position: absolute;
+width: 290px;
+height: 375px;
+left: 146px;
+top: 420px;
+
+background: url(basquete\ 1.png);
+}
+
+.volei{
+position: absolute;
+width: 290px;
+height: 375px;
+left: 592px;
+top: 420px;
+
+background: url(volei\ 1.png);
+}
+
+.artigos{
+position: absolute;
+width: 300px;
+height: 36px;
+left: 165px;
+top: 611px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+
+.acessorios{
+position: absolute;
+width: 107px;
+height: 36px;
+left: 1131px;
+top: 600px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+
+.roupas{
+position: absolute;
+width: 69px;
+height: 36px;
+left: 685px;
+top: 611px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
