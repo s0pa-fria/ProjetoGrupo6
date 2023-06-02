@@ -71,8 +71,22 @@ align-items: center;
     padding-right: 100px;
     
 }
+
+.siga{
+   margin-top: -100px;
+   color: white;
+   margin-left: 1200px;
+   margin-top: -300px;
+}
+
 ul{
     list-style: none;
+    margin-left: 1200px;
+    margin-top: 10px;
+    color: #8a8a8a;
+}
+a{
+    color: #8a8a8a;
 }
 .app-logo{
     margin-top: 20px;
