@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
 
 /* Geral */
 
@@ -8,7 +8,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 /* Header */
 
@@ -45,8 +45,8 @@ nav ul li a:hover{
     margin-left: 10px;
 }
 
-a{
-    text-decoration: none;
+li a{
+    text-decoration: bold-bolder;
     color: #555;
 }
 p{
@@ -107,6 +107,7 @@ p{
 }
 .btn:hover{
     background: #006C8A, #fff;
+    opacity: 80% #fff;
 }
 
 /* ___________________________________________________________________ */
@@ -172,6 +173,11 @@ h4{
 
 .col-3 img{
     width: 70%;
+    -webkit-filter: grayscale(0%);
+}
+.img-btn:hover{
+    -webkit-filter:brightness(80%);
+    /* opacity: 1; */
 }
 /* ___________________________________________________________________ */
 /* Footer*/
