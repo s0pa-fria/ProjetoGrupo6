@@ -1,12 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=devi
+    ce-width, initial-scale=1.0">
     <title>Acessorios esportivos</title>
+
+
+<!--Link para o CSS-->
+<link rel="stylesheet" href="style.css"/>
+
+<!--Inserindo favicon-->
+<link rel="shortcut icon" href="images/logo-favicon.png" type="image/x-icon"></link>
+
+<!--link para fontawersome (icones)-->
+<script src="https://kit.fontawersome.com/23655c98f8.js" crossorigin="anonymous"></script>
 </head>
+
+<!--________________________________________________________________________________________-->
+<!--Header-->
+
 <body>
+    <div class="header" style="background: #fff;">
+        <div class="container">
+          <div class="navbar">
+            <div class="logo">
+                <img href="images/logo.png" alt="logo" width="125" />
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="sobbre.html">sobre</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+           <a href="pagamentos.html"><img src="images/cart.png" alt="" width="30px" height="30px" /></a>
+           <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()" /> 
+        </div>
+     </div>
+
+     <!-- ____________________________________________________________________ -->
+     <!--produtos-->
+
+        <div class="small-container">
+        
+            <!--Área do filtro-->
+            <h2>Todos os produtos</h2>
+            <select>
+                <option>Padrão</option>
+                <option>Menor preço</option> 
+                <option>Mais popular</option>
+                <option>Classificação mais alta</option>
+                <option>Campeão de vendas</option>
+            </select>
+        </div>
+
+        <!--1ª Linha de produtos-->
+        <div class="row">
+            <div class="col-4">
+                <a href="produtos-detalhes.html"><img src="images/product-1.png" alt="" /></a>
+                <a href="produtos-detalhes.html"><h4>raquete profissional de tenis</h4>/a>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>R$200,00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.png" alt="" />
+                <h4>tenis you R</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p>R$950,00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.png" alt="" />
+                <h4>Calça road Z </h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-stroke"></i>
+                </div>
+                <p>R$350,00</p>
+            </div>
+            <div class="product-4.png" alt="" />
+            <h4>Camiseta blue t-shirt</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$250,00</p>
+        </div>
+    </div>
+    <!-- 2ª linha de produtos-->
+    <div class="rating">
+        <img src="images/product-5.png" alt="" />
+        <h4>tenis robot s</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>R$950,00</p>
+    </div>
+       <div class="col-4">
+        <img src="images/product-6" alt="" />
+        <h4>black printed t-shirt</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <p>R$197,00</p>
+       </div>
+       <div class="col-4">
+        <img src="images/product-7" alt="" />
+        <h4>meias red printed</h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-stroke"></i>
+        </div>
+        <p>R$17,00</p>
+       </div>
+       <div class="col-4">
+        <img src="images/product-8" alt="" />
+        <h4>Relógio men Style></h4>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+        </div>
+        <P>R$4997,99</P>
+       </div>
+       <!--3ª linha de produtos-->
+       <div class="row">
+        <div class="col-4">
+            <img src="images/product-9" alt="" />
+            <h4>Relogio men Factory</h4>
+            <div class="rating">
+                
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$8550,00</p>
+        </div>
+        <div class="col-4">
+            <img src="imagens/product-10" alt="" />
+            <h4>Tenis mountain f</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$450,00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12" alt="" />
+            <h4>Calça double j slim</h4>
+            <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <p>R$250,00</p>
+            
+        </div>
+    </div>
+   
+
     
 </body>
 </html>

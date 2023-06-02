@@ -120,7 +120,7 @@ p{
     position: absolute;
     width: 1000px;
     height: 100px;
-    left: 450px;
+    left: 500px;
     top: 40px;
     
     font-family: 'Anton', sans-serif;
@@ -137,7 +137,7 @@ p{
     position: absolute;
     width: 441px;
     height: 36px;
-    left: 550px;
+    left: 500px;
     top: 150px;
     
     font-family: 'Anton';
@@ -158,7 +158,7 @@ position: absolute;
 width: 290px;
 height: 372.43px;
 left: 1038px;
-top: 420px;
+margin-top: 300px;
 
 background: url(futebol\ 1.png);
 }
@@ -168,7 +168,7 @@ position: absolute;
 width: 290px;
 height: 375px;
 left: 146px;
-top: 420px;
+margin-top: 300px;
 
 background: url(basquete\ 1.png);
 }
@@ -178,7 +178,7 @@ position: absolute;
 width: 290px;
 height: 375px;
 left: 592px;
-top: 420px;
+margin-top: 300px;
 
 background: url(volei\ 1.png);
 }
@@ -188,7 +188,7 @@ position: absolute;
 width: 300px;
 height: 36px;
 left: 165px;
-top: 611px;
+margin-top: 450px;
 
 font-family: 'Anton';
 font-style: normal;
@@ -205,7 +205,7 @@ position: absolute;
 width: 107px;
 height: 36px;
 left: 1131px;
-top: 600px;
+margin-top: 450px;
 
 font-family: 'Anton';
 font-style: normal;
@@ -222,7 +222,7 @@ position: absolute;
 width: 69px;
 height: 36px;
 left: 685px;
-top: 611px;
+margin-top: 450px;
 
 font-family: 'Anton';
 font-style: normal;
@@ -232,4 +232,73 @@ line-height: 36px;
 
 color: #FFFFFF;
 
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+
+.footer p{
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+    margin-top: 300px;
+}
+.footer-col-1{
+   flex-basis: 30%; 
+   margin-top: 700px;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+.siga{
+   margin-top: -100px;
+   color: white;
+   margin-left: 1200px;
+   margin-top: -300px;
+}
+
+ul{
+    list-style: none;
+    margin-left: 1200px;
+    margin-top: 10px;
+    color: #8a8a8a;
+}
+a{
+    color: #8a8a8a;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
 }
