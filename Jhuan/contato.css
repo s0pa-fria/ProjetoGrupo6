@@ -1,7 +1,17 @@
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+
 body{
     position: relative;
 }
-
 .contato{
     position: absolute;
     background-color: black;
@@ -24,7 +34,9 @@ align-items: center;
     height: 100%;
 }
 
+
 .footer{
+
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
