@@ -45,7 +45,7 @@ nav ul li a:hover{
 }
 
 li a{
-    text-decoration: bold-bolder;
+    font-weight: bolder;
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
