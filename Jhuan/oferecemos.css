@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
 
 /* Geral */
 
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-
 body{
-    font-family: "Anton", sans-serif;
+    font-family: 'Anton', sans-serif;
+}
+body .header{
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -51,19 +52,18 @@ nav ul li a:hover{
 li a{
     text-decoration: bold-bolder;
     color: #555;
+    font-family: 'Poppins', sans-serif;
 }
 p{
     color: #555;
 }
 .header{
-    /* background: radial-gradient(#fff, #ffd6d6); */
     background: linear-gradient(to right, #017a9baf, #005370);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
 .header row{
     margin-top: 70px;
 }
@@ -116,6 +116,125 @@ p{
     display: none;
 }
 
+
+
+.titulo{
+    position: absolute;
+    width: 1000px;
+    height: 100px;
+    left: 500px;
+    top: 40px;
+    
+    font-family: 'Anton', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 96px;
+    
+    color: #006C8A;
+    
+}
+
+.subtitulo{
+    position: absolute;
+    width: 441px;
+    height: 36px;
+    left: 500px;
+    top: 150px;
+    
+    font-family: 'Anton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    
+    color: #FFFFFF;
+}
+
+body{
+    background-color: black;
+}
+
+/* .futebol{
+position: absolute;
+width: 290px;
+height: 372.43px;
+left: 1038px;
+margin-top: 300px;
+
+background: url(futebol\ 1.png);
+}
+
+.basquete{
+position: absolute;
+width: 290px;
+height: 375px;
+left: 146px;
+margin-top: 300px;
+}
+
+.volei{
+position: absolute;
+width: 290px;
+height: 375px;
+left: 592px;
+margin-top: 300px;
+
+background: url(volei\ 1.png);
+}
+
+.artigos{
+position: absolute;
+width: 300px;
+height: 36px;
+left: 165px;
+margin-top: 450px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+
+.acessorios{
+position: absolute;
+width: 107px;
+height: 36px;
+left: 1131px;
+margin-top: 450px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF;
+
+}
+
+.roupas{
+position: absolute;
+width: 69px;
+height: 36px;
+left: 685px;
+margin-top: 450px;
+
+font-family: 'Anton';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+
+color: #FFFFFF; 
+
+}*/
+/* ___________________________________________________________________ */
+/* Categorias*/
 .titulo{
     position: absolute;
     width: 1000px;
@@ -234,13 +353,38 @@ color: #FFFFFF;
 
 }
 
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    box-sizing: border-box;
+    flex-basis: 20%;
+    min-width: 50px;
+    margin-bottom: 50px;
+    margin-left: 72px;
+}
+
+.col-3 img{
+    width: 70%;
+    -webkit-filter: grayscale(0%);
+}
+.img-btn:hover{
+    -webkit-filter:brightness(80%);
+}
+
+/* ___________________________________________________________________ */
+/* Footer*/
 .footer{
     background: #000;
     color: #8a8a8a;
     font-size: 14px;
     padding: 60px 0 20px;
 }
-
 
 .footer p{
     color: #8a8a8a;
@@ -252,11 +396,9 @@ color: #FFFFFF;
 .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
     min-width: 250px;
     margin-bottom: 20px;
-    margin-top: 300px;
 }
 .footer-col-1{
    flex-basis: 30%; 
-   margin-top: 700px;
 }
 .footer-col-2{
     flex: 1;
@@ -270,22 +412,8 @@ color: #FFFFFF;
     flex-basis: 12%;
     text-align: center;
 }
-
-.siga{
-   margin-top: -100px;
-   color: white;
-   margin-left: 1200px;
-   margin-top: -300px;
-}
-
 ul{
     list-style: none;
-    margin-left: 1200px;
-    margin-top: 10px;
-    color: #8a8a8a;
-}
-a{
-    color: #8a8a8a;
 }
 .app-logo{
     margin-top: 20px;
@@ -302,3 +430,56 @@ a{
 .copyright{
     text-align: center;
 }
+
+/* ___________________________________________________________________ */
+/* Responsividade*/
+@media screen and (max-width: 800px) {
+
+    /* Header */
+    nav ul {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    nav ul li a{
+      color: #fff;
+    }
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+    }
+  
+ }
+  
+  @media screen and (max-width: 600px) {
+    /* Geral */
+    .row {
+      text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+      flex-basis: 100%;
+    }
+    /* Produto detalhado */
+    .single-product .row {
+      text-align: left;
+    }
+    .single-product .col-2 {
+      padding: 20px 0;
+    }
+    .single-product h1 {
+      font-size: 26px;
+      line-height: 32px;
+      padding-bottom: 20px;
+    }
+  
+  }

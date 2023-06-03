@@ -7,9 +7,8 @@
     padding: 0;
 }
 body{
-    font-family: 'Anton', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-/* ___________________________________________________________________ */
 /* Header */
 
 .navbar{
@@ -44,6 +43,7 @@ nav ul li a:hover{
 .log{
     margin-left: 10px;
 }
+
 li a{
     text-decoration: bold-bolder;
     color: #555;
@@ -58,7 +58,6 @@ p{
     justify-content: space-around;
     align-items: center;
 }
-
 .header row{
     margin-top: 70px;
 }
@@ -104,6 +103,17 @@ p{
 
 /* ___________________________________________________________________ */
 /* Header Responsividade (Mobile) */
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
 
 .menu-icon{
     width: 28px;
