@@ -50,7 +50,7 @@ nav ul li a:hover{
 }
 
 li a{
-    text-decoration: bold-bolder;
+    font-weight: bolder;
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
@@ -155,7 +155,7 @@ body{
     background-color: black;
 }
 
-/* .futebol{
+.futebol{
 position: absolute;
 width: 290px;
 height: 372.43px;
@@ -232,10 +232,10 @@ line-height: 36px;
 
 color: #FFFFFF; 
 
-}*/
+}
 /* ___________________________________________________________________ */
 /* Categorias*/
-.titulo{
+/* .titulo{
     position: absolute;
     width: 1000px;
     height: 100px;
@@ -356,26 +356,8 @@ color: #FFFFFF;
 h4{
     color: #555;
     font-weight: normal;
-}
-.categories{
-    margin: 70px 0;
-}
+} */
 
-.col-3{
-    box-sizing: border-box;
-    flex-basis: 20%;
-    min-width: 50px;
-    margin-bottom: 50px;
-    margin-left: 72px;
-}
-
-.col-3 img{
-    width: 70%;
-    -webkit-filter: grayscale(0%);
-}
-.img-btn:hover{
-    -webkit-filter:brightness(80%);
-}
 
 /* ___________________________________________________________________ */
 /* Footer*/
