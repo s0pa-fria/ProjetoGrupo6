@@ -102,6 +102,7 @@ p{
     opacity: 80% #fff;
 }
 
+
 /* ___________________________________________________________________ */
 /* Header Responsividade (Mobile) */
 
@@ -110,6 +111,7 @@ p{
     margin-left: 20px;
     display: none;
 }
+
 /* ___________________________________________________________________ */
 /* Slides*/
 .slider{
@@ -135,6 +137,7 @@ p{
 
 .slide img{
     width: 800px;
+    z-index: -1;
 }
 
 .manual-navigation{
