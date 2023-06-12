@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap');
+
 /* Geral */
 
 *{
@@ -11,6 +13,7 @@ body{
     font-family: 'Anton', sans-serif;
 }
 
+/* ___________________________________________________________________ */
 /* Header */
 
 .navbar{
@@ -47,29 +50,61 @@ nav ul li a:hover{
 }
 
 li a{
-    text-decoration: bold-bolder;
+    font-weight: bolder;
     color: #555;
+    font-family: 'Poppins', sans-serif;
 }
-p{
-    color: #555;
-}
+
 .header{
-    /* background: radial-gradient(#fff, #ffd6d6); */
-    background-color: #005370;
+    background: linear-gradient(to right, #017a9baf, #005370);
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-.slide img{
-    width: 1100px;
-    height: 700px;
-    padding-top: 30px;
-    margin-left: 230px;
+
+p{
+    color: #555;
 }
 
-.header row{
-    margin-top: 70px;
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    padding: 30px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #006C8A;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s, color 0.3s, opacity 1s;
+}
+.btn:hover{
+    background: #006C8A, #fff;
+    opacity: 80% #fff;
 }
 .container{
     max-width: 1300px;
@@ -117,6 +152,10 @@ iframe {
 .rodapé {
     width: 100%;
     height: 300px;
+}
+.detalhes {
+    text-decoration: none;
+    color: #000;
 }
 
 /* ___________________________________________________________________ */
@@ -166,11 +205,54 @@ iframe {
 /* ___________________________________________________________________ */
 /* Responsividade*/
 @media screen and (max-width: 800px) {
-
+    /* Header */
+    nav ul {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    nav ul li a{
+      color: #fff;
+    }
   
     .rodapé {
         width: 100%;
         height: 600px;
     }
+    .small-container {
+        margin-top: 250px;
+    }
   
  }
+  @media screen and (max-width: 600px) {
+    /* Geral */
+    .row {
+      text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+      flex-basis: 100%;
+    }
+    /* Produto detalhado */
+    .single-product .row {
+      text-align: left;
+    }
+    .single-product .col-2 {
+      padding: 20px 0;
+    }
+    .single-product h1 {
+      font-size: 26px;
+      line-height: 32px;
+      padding-bottom: 20px;
+    }
+  
+  }
