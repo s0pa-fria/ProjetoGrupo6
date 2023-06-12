@@ -17,13 +17,24 @@
         <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" width="60px" class="log"></a>
         <nav>
             <ul id="MenuItems">
-                <li><a href="../Soph/home.html">Home</a></li>
-                <li><a href="../Jhuan/oferecemos.html">Visão Geral</a></li>
-                <li><a href="../Jhuan/sobre.html">Sobre Nós</a></li>
-                <li><a href="../Jhuan/contato.html">Contato</a></li>
-                <li><a href="../Theus/matheus.html">Login</a></li>
+                <li><a href="../Soph/home.html" onclick="location.reload()">Home</a></li>
+
+                <li><a href="../Jhuan/oferecemos.html" onclick="location.reload()">Visão Geral</a></li>
+                <li><a href="../Jhuan/sobre.html" onclick="location.reload()">Sobre Nós</a></li>
+                <li><a href="../Jhuan/contato.html" onclick="location.reload()">Contato</a></li>
+                <li><a href="../Theus/matheus.html" onclick="location.reload()">Login</a></li>
             </ul>
         </nav>
     </div>
+
+    <!-- Código Js para forçar atualização -->
+    <script>
+        // Código JavaScript
+        document.getElementById('home-link').addEventListener('click', function(event) {
+            event.preventDefault(); // Evita o comportamento padrão de clicar no link
+            location.reload(); // Recarrega a página
+        });
+    </script>
+
 </body>
 </html>
