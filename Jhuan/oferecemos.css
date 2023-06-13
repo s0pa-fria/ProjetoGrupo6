@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap');
+
+/* ___________________________________________________________________ */
 /* Geral */
 
 *{
@@ -8,12 +11,11 @@
 }
 body{
     font-family: 'Anton', sans-serif;
-}
-body .header{
-    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #111;
 }
 
-
+/* ___________________________________________________________________ */
 /* Header */
 
 .navbar{
@@ -54,9 +56,7 @@ li a{
     color: #555;
     font-family: 'Poppins', sans-serif;
 }
-p{
-    color: #555;
-}
+
 .header{
     background: linear-gradient(to right, #017a9baf, #005370);
     height: 100px;
@@ -64,363 +64,71 @@ p{
     justify-content: space-around;
     align-items: center;
 }
-.header row{
-    margin-top: 70px;
+
+iframe {
+    width: 100%;
+    height: 300px;
+
 }
-.container{
-    max-width: 1300px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.row{
+
+  h1 {
+    color: #006C8A;
+    font-size: 60px;
+    padding-top: 30px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .fotos {
+    position: relative;
     display: flex;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-.col-2{
-    padding: 30px;
-    flex-basis: 50%;
-    min-width: 300px;
-}
-.col-2 img{
-    max-width: 100%;
-    padding: 50px 0;
-}
-.col-2 h1{
-    font-size: 50px;
-    line-height: 60px;
-    margin: 25px 0;
-}
-.btn{
-    display: inline-block;
-    background: #ff523b;
+    margin: 30px;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+
+  }
+  .card h2 {
+    position: absolute;
     color: #fff;
-    padding: 8px 30px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: 0.5s, color 0.3s, opacity 1s;
-}
-.btn:hover{
-    background: #006C8A, #fff;
-    opacity: 80% #fff;
-}
-
-/* ___________________________________________________________________ */
-/* Header Responsividade (Mobile) */
-
-.menu-icon{
-    width: 28px;
-    margin-left: 20px;
-    display: none;
-}
-
-
-
-.titulo{
-    position: absolute;
-    width: 1000px;
-    height: 100px;
-    left: 500px;
-    top: 40px;
-    
-    font-family: 'Anton', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 96px;
-    
-    color: #006C8A;
-    
-}
-
-.subtitulo{
-    position: absolute;
-    width: 441px;
-    height: 36px;
-    left: 500px;
-    top: 150px;
-    
-    font-family: 'Anton';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    
-    color: #FFFFFF;
-}
-
-body{
-    background-color: black;
-}
-
-.futebol{
-position: absolute;
-width: 290px;
-height: 372.43px;
-left: 1038px;
-margin-top: 300px;
-
-background: url(futebol\ 1.png);
-}
-
-.basquete{
-position: absolute;
-width: 290px;
-height: 375px;
-left: 146px;
-margin-top: 300px;
-}
-
-.volei{
-position: absolute;
-width: 290px;
-height: 375px;
-left: 592px;
-margin-top: 300px;
-
-background: url(volei\ 1.png);
-}
-
-.artigos{
-position: absolute;
-width: 300px;
-height: 36px;
-left: 165px;
-margin-top: 450px;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF;
-
-}
-
-.acessorios{
-position: absolute;
-width: 107px;
-height: 36px;
-left: 1131px;
-margin-top: 450px;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF;
-
-}
-
-.roupas{
-position: absolute;
-width: 69px;
-height: 36px;
-left: 685px;
-margin-top: 450px;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF; 
-
-}
-/* ___________________________________________________________________ */
-/* Categorias*/
-/* .titulo{
-    position: absolute;
-    width: 1000px;
-    height: 100px;
-    left: 500px;
-    top: 40px;
-    
-    font-family: 'Anton', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 96px;
-    
-    color: #006C8A;
-    
-}
-
-.subtitulo{
-    position: absolute;
-    width: 441px;
-    height: 36px;
-    left: 500px;
-    top: 150px;
-    
-    font-family: 'Anton';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    
-    color: #FFFFFF;
-}
-
-body{
-    background-color: black;
-}
-
-.futebol{
-position: absolute;
-width: 290px;
-height: 372.43px;
-left: 1038px;
-margin-top: 300px;
-
-background: url(futebol\ 1.png);
-}
-
-.basquete{
-position: absolute;
-width: 290px;
-height: 375px;
-left: 146px;
-margin-top: 300px;
-
-background: url(basquete\ 1.png);
-}
-
-.volei{
-position: absolute;
-width: 290px;
-height: 375px;
-left: 592px;
-margin-top: 300px;
-
-background: url(volei\ 1.png);
-}
-
-.artigos{
-position: absolute;
-width: 300px;
-height: 36px;
-left: 165px;
-margin-top: 450px;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF;
-
-}
-
-.acessorios{
-position: absolute;
-width: 107px;
-height: 36px;
-left: 1131px;
-margin-top: 450px;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF;
-
-}
-
-.roupas{
-position: absolute;
-width: 69px;
-height: 36px;
-left: 685px;
-margin-top: 450px;
-
-font-family: 'Anton';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-
-color: #FFFFFF;
-
-}
-
-h4{
-    color: #555;
-    font-weight: normal;
-} */
-
-
-/* ___________________________________________________________________ */
-/* Footer*/
-.footer{
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
-}
-
-.footer p{
-    color: #8a8a8a;
-}
-.footer h3{
-    color: #fff;
-    margin-bottom: 20px;
-}
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-.footer-col-1{
-   flex-basis: 30%; 
-}
-.footer-col-2{
-    flex: 1;
+    font-size: 25px;
     text-align: center;
-}
-.footer-col-2 img{
-    width: 180px;
-    margin-bottom: 20px;
-}
-.footer-col-3, .footer-col-4{
-    flex-basis: 12%;
-    text-align: center;
-}
-ul{
-    list-style: none;
-}
-.app-logo{
-    margin-top: 20px;
-}
-.app-logo img{
-    width: 140px;
-}
-.footer hr{
-    border: none;
-    background: #b5b5b5;
-    height: 1px;
-    margin: 20px 0;
-}
-.copyright{
-    text-align: center;
-}
+    padding: 10px;
+  }
 
-/* ___________________________________________________________________ */
-/* Responsividade*/
+  .card:hover {
+    background-color: #000;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  
+  /* ___________________________________________________________________ */
+  /* Responsividade*/
+
 @media screen and (max-width: 800px) {
 
     /* Header */
     nav ul {
       position: absolute;
-      top: 70px;
+      top: 100px;
       left: 0;
       background: #333;
       width: 100%;
@@ -436,32 +144,26 @@ ul{
     nav ul li a{
       color: #fff;
     }
-    .menu-icon {
-      display: block;
-      cursor: pointer;
+    .contato{
+        top: 52%;
+        left: 3%;
+        width: 35%;
+        height: 40%;
+        font-size: 16px;
+
     }
+    iframe {
+        width: 100%;
+        height: 600px;
+    }
+    .fotos {
+        margin-top: 60px;
+    }
+    .card {
+        flex-direction: column;
+    
+      }
   
  }
   
-  @media screen and (max-width: 600px) {
-    /* Geral */
-    .row {
-      text-align: center;
-    }
-    .col-2, .col-3, .col-4 {
-      flex-basis: 100%;
-    }
-    /* Produto detalhado */
-    .single-product .row {
-      text-align: left;
-    }
-    .single-product .col-2 {
-      padding: 20px 0;
-    }
-    .single-product h1 {
-      font-size: 26px;
-      line-height: 32px;
-      padding-bottom: 20px;
-    }
-  
-  }
+ 
