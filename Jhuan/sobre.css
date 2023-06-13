@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Harmattan:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap');
+
+/* ___________________________________________________________________ */
 /* Geral */
 
 *{
     margin: 0;
     padding: 0;
 }
-body .titulo{
+body{
     font-family: 'Anton', sans-serif;
-    font-weight: 200;
-}
-body .paragrafo{
-    font-family: 'Harmattan', sans-serif;
 }
 
+/* ___________________________________________________________________ */
 /* Header */
 
 .navbar{
@@ -49,13 +50,11 @@ nav ul li a:hover{
 }
 
 li a{
+    font-weight: bolder;
     color: #555;
     font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
-p{
-    color: #555;
-}
+
 .header{
     background: linear-gradient(to right, #017a9baf, #005370);
     height: 100px;
@@ -63,9 +62,15 @@ p{
     justify-content: space-around;
     align-items: center;
 }
-.header row{
-    margin-top: 70px;
+
+body .titulo{
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
 }
+body .paragrafo{
+    font-family: 'Harmattan', sans-serif;
+}
+
 .container{
     max-width: 1300px;
     margin: auto;
@@ -147,75 +152,44 @@ body{
         margin-top: -10000px;
     }
 
-    a{
-        color: white;
+    button {
+        border: none;
+        background-color: #006C8A;
+        color: #fff;
+        padding: 8px;
+        text-decoration: none;
+        margin-left: 45px;
+        cursor: pointer;
     }
+    button a {
+        color: #000;
+        background-color: #fff;
+        padding: 8px;
+        text-decoration: none;
 
+    }
+    button a:hover {
+        background-color: #006C8A;
+        color: #fff;
 
-
-/* ___________________________________________________________________ */
-/* Footer */
-.footer{
-    background: #000;
-    color: #8a8a8a;
-    font-size: 14px;
-    padding: 60px 0 20px;
-}
-
-.footer p{
-    color: #8a8a8a;
-}
-.footer h3{
-    color: #fff;
-    margin-bottom: 20px;
-}
-.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-    min-width: 250px;
-    margin-bottom: 20px;
-}
-.footer-col-1{
-   flex-basis: 30%; 
-}
-.footer-col-2{
-    flex: 1;
-    text-align: center;
-}
-.footer-col-2 img{
-    width: 180px;
-    margin-bottom: 20px;
-}
-.footer-col-3, .footer-col-4{
-    flex-basis: 12%;
-    text-align: center;
-}
-ul{
-    list-style: none;
-}
-.app-logo{
-    margin-top: 20px;
-}
-.app-logo img{
-    width: 140px;
-}
-.footer hr{
-    border: none;
-    background: #b5b5b5;
-    height: 1px;
-    margin: 20px 0;
-}
-.copyright{
-    text-align: center;
-} 
-
-
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+    
+    }
+    .destaque {
+        background-color: #111;
+    }
 /* ___________________________________________________________________ */
 /* Responsividade*/
+
 @media screen and (max-width: 800px) {
 
     /* Header */
     nav ul {
       position: absolute;
-      top: 70px;
+      top: 100px;
       left: 0;
       background: #333;
       width: 100%;
@@ -231,32 +205,16 @@ ul{
     nav ul li a{
       color: #fff;
     }
-    .menu-icon {
-      display: block;
-      cursor: pointer;
+    iframe {
+        width: 100%;
+        height: 600px;
     }
+    .destaque {
+        margin-top: 180px;
+    }
+    .imagem {
+        display: none;
+    }
+
   
  }
-  
-  @media screen and (max-width: 600px) {
-    /* Geral */
-    .row {
-      text-align: center;
-    }
-    .col-2, .col-3, .col-4 {
-      flex-basis: 100%;
-    }
-    /* Produto detalhado */
-    .single-product .row {
-      text-align: left;
-    }
-    .single-product .col-2 {
-      padding: 20px 0;
-    }
-    .single-product h1 {
-      font-size: 26px;
-      line-height: 32px;
-      padding-bottom: 20px;
-    }
-  
-  }
