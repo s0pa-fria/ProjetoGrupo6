@@ -114,6 +114,9 @@ ul{
 .copyright{
     text-align: center;
 }
+h3{
+    font-weight: lighter;
+}
 
 /* ___________________________________________________________________ */
 /* Responsividade*/
