@@ -46,6 +46,8 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 .log{
+    width:60px;
+    height:60px;
     margin-left: 10px;
 }
 
@@ -131,6 +133,11 @@ p{
     font-size: 50px;
     line-height: 60px;
     margin: 25px 0;
+}
+
+img {
+    width: 200px;
+    height: 300px;
 }
 .btn{
     display: inline-block;
