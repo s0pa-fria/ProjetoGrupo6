@@ -6,6 +6,15 @@
     box-sizing: border-box;
 }
 
+.pesquisa {
+    margin-left: 150px;
+    border-radius: 20px;
+    height: 30px;
+    width: 200px;
+    border-color: #005370;
+    text-decoration: none;
+}
+
 /* Rolagem Produtos */
 
 .product {
