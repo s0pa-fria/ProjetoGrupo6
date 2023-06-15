@@ -12,7 +12,11 @@
 body{
     font-family: 'Anton', sans-serif;
     text-align: center;
-    background-color: #111;
+    
+}
+section {
+  background-color: #111;
+  height: 500px;
 }
 
 /* ___________________________________________________________________ */
