@@ -16,6 +16,11 @@ body{
 /* ___________________________________________________________________ */
 /* Header */
 
+h2 {
+    margin-right: 1000px;
+    
+}
+
 .navbar{
     display: flex;
     align-items: center;
@@ -46,6 +51,8 @@ nav ul li a:hover{
     transition: 0.5s;
 }
 .log{
+    width:60px;
+    height:60px;
     margin-left: 10px;
 }
 
@@ -132,6 +139,11 @@ p{
     line-height: 60px;
     margin: 25px 0;
 }
+
+img {
+    width: 210px;
+    height: 240px;
+}
 .btn{
     display: inline-block;
     background: #ff523b;
@@ -195,11 +207,15 @@ iframe {
     font-size: 14px;
 }
 .rating .fa, .fa-solid, .fa-regular{
-    color: #ff523b;
+    color: #006C8A;
 }
 
 .page-btn {
     margin-bottom: 30px;
+}
+
+h4 {
+    font-weight: lighter;
 }
 
 /* ___________________________________________________________________ */
