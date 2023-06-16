@@ -430,6 +430,21 @@ th:last-child {
 .iconify {
 padding: 0 15px;
 }
+.finalizar{
+  background-color:#fff;
+  text-decoration: none;
+  height: 40px;
+  margin-left: 800px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: bold;
+}
+.finalizar:hover{
+  background-color: #36678f;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
 
 /* ______________________________________________________________________________ */
 /* Sobre (Página Sobre) */
