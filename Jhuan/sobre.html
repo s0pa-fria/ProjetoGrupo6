@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="../header/header.css">
     <!-- Link para Favicon -->
     <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
+
+
+    <!-- Link para fontawesome (Icones) -->
+    <script src="https://kit.fontawesome.com/23da1496ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="header">
@@ -29,13 +33,13 @@
     <div class="destaque">
         <h1 class="titulo">Sobre a nossa <br> empresa</h1>
         <p class="paragrafo">Fundada em Janeiro de 2013 no leste <br>
-            de São Paulo, Nickers Sports cresceu e se <br>
+            de São Paulo, Nikers Sports cresceu e se <br>
             tornou uma das maiores marcas de esportes <br>
             do país com milhões de clientes satisfeitos. <br>
             Começando com um empréstimo pequeno, um <br>
             computador alugado e poucos artigos para <br>
             vendas. Os fundadores transformaram a <br>
-            Nickers Sport em uma empresa revolucionária cuja as <br>
+            Nikers Sport em uma empresa revolucionária cuja as <br>
             inovações ajudaram a moldar o setor <br>
             esportivo
             </p>
@@ -83,6 +87,7 @@
 
 
     <style>
+        
         #abrir-popup:checked ~ #conteudo {
           display: block;
         }
@@ -93,6 +98,10 @@
         #fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #aceito-popup-btn{
           display: none;
           align-self: center;
+        }
+        #fa-regular #fa-circle-xmark #fa-bounce{
+        font-size: 34px;
+        color: #006C8A;
         }
       
         #abrir-popup-btn {
@@ -148,16 +157,16 @@
 
         /* Leir mais */
         #conteudo #ler-popup-btn {
-          display: block;
-          color: #000;
-          background-color: #006C8A;
-          width: fit-content;
-          padding: 10px 34px;
-          border-radius: 4px;
-          box-shadow: 0px 5px 15px -5px #20003044;
-          cursor: pointer;
-          margin-left: 30px;
-          align-items: end;
+            display: block;
+            color: #000;
+            background-color: #006C8A;
+            width: fit-content;
+            padding: 10px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+            margin-left: 60px;
+            align-items: end;
         }
     
         #conteudo #ler-popup-btn:hover {
@@ -173,26 +182,26 @@
         
         /* Li e concodo com os termos */
         #conteudo #aceito-popup-btn {
-          display: block;
-          color: #000;
-          background-color: #006C8A;
-          width: fit-content;
-          padding: 10px 34px;
-          border-radius: 4px;
-          box-shadow: 0px 5px 15px -5px #20003044;
-          cursor: pointer;
-          margin-left: 30px;
-          align-items: end;
+            display: block;
+            color: #000;
+            background-color: #006C8A;
+            width: fit-content;
+            padding: 10px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+            margin-left: 60px;
+            align-items: end;
         }
         #conteudo #aceito-popup-btn:hover {
-          display: block;
-          color: #006C8A;
-          background-color: #fff;
-          width: fit-content;
-          padding: 12px 34px;
-          border-radius: 4px;
-          box-shadow: 0px 5px 15px -5px #20003044;
-          cursor: pointer;
+            display: block;
+            color: #006C8A;
+            background-color: #fff;
+            width: fit-content;
+            padding: 12px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
         }
 
 
@@ -200,25 +209,63 @@
             display: inline-block;
             list-style-type: none;
         }
+
+/* _________________________________________________ */
+        nav {
+        flex: 1;
+        text-align: right;
+        }
+        nav ul {
+        display: inline-block;
+        list-style-type: none;
+        }
+        nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+        }
+        nav ul li a {
+        text-decoration: none;
+        padding: 5px;
+        
+        }
+        nav ul li a:hover{
+        background-color: #006C8A;
+        padding: 5px;
+        border-radius: 5px;
+        color: #fff;
+        transition: 0.5s;
+        }
+
+        
       </style>
       
       <input id="abrir-popup" name="popup" type="radio" hidden>
       <input id="fechar-popup" name="popup" type="radio" hidden checked>
       
-      <label id="fechar-popup-btn" for="fechar-popup">FECHAR</label>
+    <!-- <label id="fechar-popup-btn" for="fechar-popup">
+        <div class="rating">
+            <i class="fa-regular fa-circle-xmark fa-bounce" style="color: #006c8a;">X</i>
+        </div>
+    </label> -->
       
       
       
-      <div id="conteudo">
+    <div id="conteudo">
         <h3>Política de Privacidade</h3>
         <p>Termos de uso e serviços para o site Nikers Sports<span><br> <br></p>
 
-           <p>Bem-vindo ao Nikers Sports, um site fictício de <br>compras online especializado em produtos <br> esportivos. Ao utilizar os serviços oferecidos neste site, <br> você concorda com os termos e condições descritos abaixo.</p>
+           <p>Bem-vindo ao Nikers Sports, um site fictício de <br>
+            compras online especializado em produtos <br>
+             esportivos. Ao utilizar os serviços oferecidos neste site, <br> 
+             você concorda com os termos e condições descritos abaixo.</p>
+
+            <nav>
            <ul id="popup-btn">
-                <li><label id="ler-popup-btn" for="ler-popup">Ler Mais</label></li>
-                <li><label id="aceito-popup-btn" for="fechar-popup">Li e concordo com os termos </label></li>
+                <li><a href=""></a><label id="ler-popup-btn" for="ler-popup">Ler mais</label></li>
+                <li><a href=""></a><label id="aceito-popup-btn" for="fechar-popup">Li e concordo com os termos </label></li>
            </ul>
-      </div>
+           </nav>
+    </div>
       
     <!-- ________________________________________________________________ -->
     <!-- Footer -->
