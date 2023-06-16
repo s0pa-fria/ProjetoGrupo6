@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+
+    <link rel="stylesheet" href="faleConosco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+    <!-- Header -->
+        
+    <div class="header2">
+        <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" width="60px" class="log"></a>
+        <input type="search" name="Pesquisar" placeholder="Pesquisar..."  class="pesquisa">
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="../Soph/home.html">Home</a></li>
+                <li><a href="../Jhuan/oferecemos.html">Visão Geral</a></li>
+                <li><a href="../Jhuan/sobre.html">Sobre Nós</a></li>
+                <li><a href="../Fale-Conosco-Matheus/faleConosco.html">Fale Conosco</a></li>
+                <li><a href="../Theus/matheus.html">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="parent">
+        <div class="desc">
+            <h1 class="text">Fale Conosco!</h1>
+            <p>Queremos ouvir você! Em nossa aba "Fale Conosco", estamos prontos para atender suas dúvidas, sugestões e resolver qualquer problema. Sua opinião é fundamental para aprimorarmos nossa loja digital e oferecer a melhor experiência de compra possível. Entre em contato conosco agora mesmo e vamos conversar!</p>
+            <button id="init">INICIAR CHAT</button>
+        </div>
+        <div>
+            <img src="/Imagens/chatbot.png" alt="" class="bot-img">
+        </div>
+    </div>
+    <div id="test" style="position: fixed; bottom: 4rem; right: 8rem; display: none;">
+        <div class="child" id="chatbot">
+            <div class="header2">
+                <div class="h-child">
+                    <img src="/Imagens/headset.png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">Atendimento</span>
+                        <br>
+                        <span style="color: lawngreen;">Online</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="refBtn"><i class="fa fa-refresh" onclick="initChat()"></i></button>
+                </div>
+            </div>
+
+            <div id="chat-box">
+
+            </div>
+            <div class="footer2">
+                <span>Powered by @NikersSports</span>
+            </div>              
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <iframe
+      src="..\footer\footer.html"
+      frameborder="0"
+      scrolling="no"
+      class="slider"
+    ></iframe>
+
+    <script src="faleConosco.js"></script>
+
+</body>
+</html>
