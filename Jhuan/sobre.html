@@ -51,43 +51,9 @@
         </div>
     </div>
 
-    <!-- <div class="pop">
-        <button class="fechar">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 464c-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216 0 118.7-96.1 216-216 216zm94.8-285.3L281.5 256l69.3 69.3c4.7 4.7 4.7 12.3 0 17l-8.5 8.5c-4.7 4.7-12.3 4.7-17 0L256 281.5l-69.3 69.3c-4.7 4.7-12.3 4.7-17 0l-8.5-8.5c-4.7-4.7-4.7-12.3 0-17l69.3-69.3-69.3-69.3c-4.7-4.7-4.7-12.3 0-17l8.5-8.5c4.7-4.7 12.3-4.7 17 0l69.3 69.3 69.3-69.3c4.7-4.7 12.3-4.7 17 0l8.5 8.5c4.6 4.7 4.6 12.3 0 17z"></path></svg>
-        </button>
-        <div class="política">
-        
-        <h3>Política de Privacidade</h3>
-        <p>Termos de uso e serviços para o site Nikers Sports<span><br>
-
-            Bem-vindo ao Nikers Sports, um site fictício de compras online especializado em produtos esportivos. Ao utilizar os serviços oferecidos neste site, você concorda com os termos e condições descritos abaixo. <br></p>
-
-            <p>1. Aceitação dos termos <br>
-                Ao acessar ou usar o site Nikers Sports, você reconhece ter lido, entendido e concordado com estes termos de uso e serviços. Se você não concordar com estes termos, por favor, não utilize este site.</p>
-            
-            <p>2. Compras e Pagamentos <br>
-                O Nikers Sports oferece uma plataforma online para você comprar produtos esportivos. Ao fazer uma compra, você concorda em fornecer informações precisas sobre seu endereço de entrega e pagamento. Você é responsável por quaisquer taxas ou impostos associados à compra, incluindo o frete. O Nikers Sports se reserva o direito de cancelar uma compra a qualquer momento por motivos de segurança ou outros motivos.</p>
-
-            <p>3. Propriedade intelectual <br>
-                Todo o conteúdo presente no Nikers Sports, incluindo textos, imagens, gráficos, logotipos, botões, ícones, software e outros materiais, são de propriedade exclusiva do Nikers Sports ou de seus licenciadores e são protegidos pelas leis de direitos autorais e outras leis de propriedade intelectual. O uso não autorizado de qualquer conteúdo do Nikers Sports é estritamente proibido.</p>
-
-            <p>4. Limitações de responsabilidade <br>
-                O Nikers Sports não é responsável por quaisquer danos ou prejuízos resultantes do uso deste site, incluindo, sem limitação, perda de lucros, interrupção de negócios ou perda de dados. O Nikers Sports não garante que o site seja livre de erros ou vírus. O Nikers Sports não se responsabiliza por quaisquer informações imprecisas ou incompletas presentes no site.</p>
-
-            <p>5. Alterações nos termos de uso <br>
-                O Nikers Sports reserva-se o direito de alterar estes termos de uso a qualquer momento. As alterações entrarão em vigor imediatamente após a publicação no site. O uso continuado deste site após a publicação de alterações aos termos de uso significa que você aceita e concorda com as alterações.</p>
-
-            <p>6. Lei aplicável <br>
-                Estes termos de uso são regidos pelas leis da jurisdição em que a empresa Nikers Sports está registrada.</p>
-
-            <p>Ao utilizar o site Nikers Sports, você concorda com estes termos de uso e serviços. Se você tiver alguma dúvida sobre estes termos, entre em contato com nossa equipe de suporte ao cliente.</p>
-        </div>
-        <button><a href="#">Leia mais</a></button>    
-    </div> -->
-
-
     <style>
-        
+        /* ___________________________________________________________________________________________________ */
+        /* Botões de abrir e fechar */
         #abrir-popup:checked ~ #conteudo {
           display: block;
         }
@@ -98,10 +64,6 @@
         #fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #aceito-popup-btn{
           display: none;
           align-self: center;
-        }
-
-        #ler-popup:checked ~ #conteudo-lermais, #fechar-popup:checked ~ #aceito-popup-btn{
-
         }
 
         #fa-regular #fa-circle-xmark #fa-bounce{
@@ -138,7 +100,7 @@
           width: 100vw;
           height: 100vh;
         }
-      
+/*_____________________________________________________________________________  */
         #conteudo {
           box-sizing: border-box;
           position: fixed;
@@ -161,6 +123,7 @@
         }
 
         /* Leir mais */
+        
         #conteudo #ler-popup-btn {
             display: block;
             color: #000;
@@ -184,8 +147,8 @@
             box-shadow: 0px 5px 15px -5px #20003044;
             cursor: pointer;
         }
-        
-        /* Li e concodo com os termos */
+/*___________________________________________________________________________________________________  */
+/* Li e concodo com os termos */
         #conteudo #aceito-popup-btn {
             display: block;
             color: #000;
@@ -214,6 +177,131 @@
             display: inline-block;
             list-style-type: none;
         }
+/* ___________________________________________________________________________________________________ */
+    /*Conteúdo- Ler mais */
+    /* Botões de abrir e fechar */
+        #abrir-lermais-popup:checked ~ #conteudo2, #ler-popup-btn ~, #fechar-popup ~ #conteudo {
+          display: block;
+        }
+        #fechar-lermais-popup:checked ~ #conteudo2, #fechar-popup2:checked ~ #fechar-popup-btn2{
+          display: none;
+          align-self: center;
+        }
+        #fechar-popup:checked ~ #conteudo2, #fechar-popup2:checked ~ #aceito-popup-btn2{
+          display: none;
+          align-self: center;
+        }
+
+        #fa-regular #fa-circle-xmark #fa-bounce{
+        font-size: 34px;
+        color: #006C8A;
+        }
+
+        #abrir-popup-btn {
+          display: block;
+          color: #000;
+          background-color: #006C8A;
+          width: fit-content;
+          padding: 12px 34px;
+          border-radius: 4px;
+          box-shadow: 0px 5px 15px -5px #20003044;
+          cursor: pointer;
+          margin-left: 50px;
+        }
+        #abrir-popup-btn:hover {
+          display: block;
+          color: #006C8A;
+          background-color: #fff;
+          width: fit-content;
+          padding: 12px 34px;
+          border-radius: 4px;
+          box-shadow: 0px 5px 15px -5px #20003044;
+          cursor: pointer;
+        }
+        #fechar-popup-btn {
+          background-color: #00000020;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100vw;
+          height: 100vh;
+        }
+
+/* _________________________________________________________________________________________________________ */
+        #conteudo2 {
+          box-sizing: border-box;
+          position: fixed;
+          width: min(500px, 90vw);
+          height: 300px;
+          left: max(calc(50vw - 380px / 2), 4vw);
+          top: calc(50vh - 80px);
+          color: #000;
+          padding: 22px;
+          background-color: #fff;
+          opacity: 95%;
+          border: 2px solid #006C8A;
+          border-radius: 8px;
+          box-shadow: 0px 5px 15px -5px #0000003c;
+          overflow-y: scroll;
+
+        }
+        #conteudo2 p{
+            text-align: justify;
+            justify-content: center;
+        }
+        #conteudo2 #ler-popup-btn {
+            display: block;
+            color: #000;
+            background-color: #006C8A;
+            width: fit-content;
+            padding: 10px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+            margin-left: 60px;
+            align-items: end;
+        }
+    
+        #conteudo2 #ler-popup-btn:hover {
+            display: block;
+            color: #006C8A;
+            background-color: #fff;
+            width: fit-content;
+            padding: 12px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+        }
+/*___________________________________________________________________________________________________  */
+/* Li e concodo com os termos */
+        #conteudo2 #aceito-popup-btn2 {
+            display: block;
+            color: #000;
+            background-color: #006C8A;
+            width: fit-content;
+            padding: 10px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+            margin-left: 60px;
+            align-items: end;
+        }
+        #conteudo2 #aceito-popup-btn2:hover {
+            display: block;
+            color: #006C8A;
+            background-color: #fff;
+            width: fit-content;
+            padding: 12px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+        }
+
+
+        #conteudo2 #popup-btn ul li {
+            display: inline-block;
+            list-style-type: none;
+        }
 
 /* _________________________________________________ */
         nav {
@@ -223,10 +311,11 @@
         nav ul {
         display: inline-block;
         list-style-type: none;
-        }
+    }
         nav ul li {
         display: inline-block;
         margin-right: 20px;
+        flex-flow: column-reverse;
         }
         nav ul li a {
         text-decoration: none;
@@ -266,19 +355,23 @@
 
             <nav>
            <ul id="popup-btn">
-                <li><a href=""></a><label id="ler-popup-btn" for="ler-popup">Ler mais</label></li>
-                <li><a href=""></a><label id="aceito-popup-btn" for="fechar-popup">Li e concordo com os termos </label></li>
+                <label id="ler-popup-btn" for="abrir-lermais-popup"><li>Ler mais</li></label>
+                <a href=""></a><label id="aceito-popup-btn" for="fechar-popup"><li>Li e concordo com os termos </li></label>
            </ul>
            </nav>
     </div>
-    <div id="conteudo-lermais">
+
+    <input id="abrir-lermais-popup" name="popup" type="radio" hidden>
+    <input id="fechar-lermais-popup" name="popup" type="radio" hidden checked>
+
+    <div id="conteudo2">
         <h3>Política de Privacidade</h3>
         <p>Termos de uso e serviços para o site Nikers Sports<span><br> <br></p>
 
            <p>Bem-vindo ao Nikers Sports, um site fictício de <br>
             compras online especializado em produtos <br>
              esportivos. Ao utilizar os serviços oferecidos neste site, <br> 
-             você concorda com os termos e condições descritos abaixo.</p>
+             você concorda com os termos e condições descritos abaixo. <br> <br></p>
 
              <p>1. Aceitação dos termos <br>
                 Ao acessar ou usar o site Nikers Sports, você<br>
@@ -293,7 +386,8 @@
                 uma compra, você concorda em fornecer <br> 
                 informações precisas sobre seu endereço de <br> 
                 entrega e pagamento. Você é responsável por<br>  
-                quaisquer taxas ou impostos associados à compra,<br>  incluindo o frete. O Nikers Sports se reserva o<br> 
+                quaisquer taxas ou impostos associados à compra,<br> 
+                incluindo o frete. O Nikers Sports se reserva o<br> 
                 direito de cancelar uma compra a qualquer <br> 
                 momento por motivos de segurança ou outros <br> 
                 motivos.</p>
@@ -301,8 +395,12 @@
             <p>3. Propriedade intelectual <br>
                 Todo o conteúdo presente no Nikers Sports,<br>  
                 incluindo textos, imagens, gráficos, logotipos,<br> 
-                botões, ícones, software e outros materiais, são de <br> propriedade exclusiva do Nikers Sports ou de seus <br>  licenciadores e são protegidos pelas leis de<br>
-                direitos  autorais e outras leis de propriedade<br> intelectual. O uso não autorizado de qualquer conteúdo do Nikers Sports é estritamente <br>
+                botões, ícones, software e outros materiais, são de <br> 
+                propriedade exclusiva do Nikers Sports ou de seus <br>  
+                licenciadores e são protegidos pelas leis de<br>
+                direitos  autorais e outras leis de propriedade<br> 
+                intelectual. O uso não autorizado de qualquer <br>
+                conteúdo do Nikers Sports é estritamente <br>
                 proibido.</p>
 
             <p>4. Limitações de responsabilidade <br>
@@ -319,17 +417,23 @@
                 O Nikers Sports reserva-se o direito de alterar <br>
                 estes termos de uso a qualquer momento. As <br>
                 alterações entrarão em vigor imediatamente após<br>
-                a publicação no site. O uso continuado deste site após a publicação de alterações aos termos de uso significa que você aceita e concorda com as alterações.</p>
+                a publicação no site. O uso continuado deste site <br>
+                após a publicação de alterações aos termos de uso <br>
+                significa que você aceita e concorda com as<br> alterações.</p>
 
             <p>6. Lei aplicável <br>
-                Estes termos de uso são regidos pelas leis da jurisdição em que a empresa Nikers Sports está registrada.</p>
+                Estes termos de uso são regidos pelas leis da <br>
+                jurisdição em que a empresa Nikers Sports está<br>
+                registrada. <br><br></p>
 
-            <p>Ao utilizar o site Nikers Sports, você concorda com estes termos de uso e serviços. Se você tiver alguma dúvida sobre estes termos, entre em contato com nossa equipe de suporte ao cliente.</p>
+            <p>Ao utilizar o site Nikers Sports, você concorda com <br>
+                estes termos de uso e serviços. Se você tiver <br>
+                alguma dúvida sobre estes termos, entre em <br>
+                contato com nossa equipe de suporte ao cliente.</p>
 
             <nav>
-           <ul id="popup-btn">
-                <li><a href=""></a><label id="ler-popup-btn" for="ler-popup">Ler menos</label></li>
-                <li><a href=""></a><label id="aceito-popup-btn" for="fechar-popup">Li e concordo com os termos </label></li>
+           <ul id="popup-btn2">
+                <li><a href=""></a><label id="aceito-popup-btn2" for="fechar-popup2">Li e concordo com os termos </label></li>
            </ul>
            </nav>
     </div>
