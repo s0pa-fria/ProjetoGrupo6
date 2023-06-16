@@ -3,213 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=devi
-    ce-width, initial-scale=1.0">
-    <title>Nikers Sports - Artigos Esportivos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nikers Sports-Artigos</title>
 
+    <!-- Link para CSS -->
+    <link rel="stylesheet" href="artigos.css">
 
-<!--Link para o CSS-->
-<link rel="stylesheet" href="artigos.css"/>
+    <!-- Link para Favicon -->
+    <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
 
-<!-- Link para Favicon -->
-<link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
-
-<!--link para fontawersome (icones)-->
-<script src="https://kit.fontawersome.com/23655c98f8.js" crossorigin="anonymous"></script>
+    <!-- Link para fontawesome (Icones) -->
+    <script src="https://kit.fontawesome.com/23655c98f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- <div class="header" style="background: #fff;">
-        <div class="container">
-          <div class="navbar">
-            <div class="logo">
-                <img href="images/logo.png" alt="logo" width="125" />
-            </div>
-            <nav>
-                <ul id="MenuItems">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="sobbre.html">sobre</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </nav>
-           <a href="pagamentos.html"><img src="images/cart.png" alt="" width="30px" height="30px" /></a>
-           <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()" /> 
-        </div>
-     </div> -->
+    
+     <!-- Header -->
 
      <div class="header">
-
-        <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" width="60px" class="log"></a>
+        <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" class="log"></a>
         <input type="search" name="Pesquisar" placeholder="Pesquisar..."  class="pesquisa">
         <nav>
             <ul id="MenuItems">
                 <li><a href="../Soph/home.html">Home</a></li>
-                <li><a href="produtos.html">Visão Geral</a></li>
-                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="../Jhuan/oferecemos.html">Visão Geral</a></li>
+                <li><a href="../Jhuan/sobre.html">Sobre Nós</a></li>
                 <li><a href="../Theus/faleConosco.html">Fale Conosco</a></li>
-                <li><a href="../Theus/m.html">Login</a></li>
+                <li><a href="../Theus/matheus.html">Login</a></li>
             </ul>
         </nav>
-
-
     </div>
-
-     <!-- ____________________________________________________________________ -->
-     <!--produtos-->
-
-        <div class="small-container">
         
-            <!--Área do filtro-->
-            <h2>Todos os produtos</h2>
-            <select>
-                <option>Padrão</option>
-                <option>Menor preço</option> 
-                <option>Mais popular</option>
-                <option>Classificação mais alta</option>
-                <option>Campeão de vendas</option>
-            </select>
-        </div>
+<!-- ________________________________________________________________ -->
+<!-- Produtos -->
+        <div class="small-container">
+            <h2>Todos os Produtos</h2>
+            <!-- ÁNosso propósito é tornar o prazer e os benefícios
+                do esporte acessíveis a todosrea do filtro -->
+            <div class="row row-2">
+                <select>
+                    <option>Padrão</option>
+                    <option>Menor preço</option>
+                    <option>Mais popular</option>
+                    <option>Classificação mais alta</option>
+                    <option>Campeão de vendas</option>
+                </select>
+            </div>
 
-        <!--1ª Linha de produtos-->
+            <!-- 1ª Linha de produtos -->
         <div class="row">
             <div class="col-4">
-                <a href="produtos-detalhes.html"><img src="../Imagens/produto 1.png" alt="" /></a>
-                <a href="produtos-detalhes.html"><h4>raquete profissional de tenis</h4>/a>
+                <a href="produtos-detalhes.html"><img src="../Imagens/jaqueta masculina.png" alt=""></a>
+                <button class="card-btn">Adicionar ao Carrinho</button>
+                <a href="produtos-detalhes.html" class="detalhes"><h4>Jaqueta Maculina Casual Esportiva</h4></a>
+                <div class="rating">
+                <i class="fa-regular fa-heart"></i>
+                </div>
+                <p>R$100,00</p>
+            </div>
+            <div class="col-4">
+                <img src="../Imagens/calça legging.png" alt="">
+                <button class="card-btn"> <a href="../Pagamentos/pagamentos.html">Adicionar ao Carrinho</a></button>
+                <h4>Calça Feminina Color Black</h4>
+                <div class="rating">
+                <i class="fa-regular fa-heart"></i> 
+                </div>
+                <p>R$50,00</p>
+            </div>
+            <div class="col-4">
+                <img src="../Imagens/camisa termica.png" alt="">
+                <button class="card-btn">Adicionar ao Carrinho</button>
+                <h4>Camisa Térmica Penalty Unissex</h4>
+                <div class="rating">
+                <i class="fa-regular fa-heart"></i> 
+                </div>
+                <p>R$150,00</p>
+            </div>
+            <div class="col-4">
+                <img src="../Imagens/meias unissex.png" alt="">
+                <button class="card-btn">Adicionar ao Carrinho</button>
+                <h4>Meia Cano Alto Unissex</h4>
+                <div class="rating">
+                <i class="fa-regular fa-heart"></i>  
+                </div>
+                <p>R$19,90</p>
+            </div>
+        </div>
+            <!-- 2ª Linha de produtos-->
+            <div class="row">
+                <div class="col-4">
+                    <img src="../Imagens/luva.ciclismo.png" alt="">
+                    <button class="card-btn"><a href="../Pagamentos/pagamentos.html">Adicionar ao Carrinho</a></button>
+                    <h4>Luva Ciclismo Aero Giyo Preta</h4>
                     <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-heart"></i>  
+                    </div> 
+                    <p>R$20,90</p>
+                </div>
+                <div class="col-4">
+                    <img src="../Imagens/top adidas feminino.png" alt="">
+                    <button class="card-btn"><a href="../Pagamentos/pagamentos.html">Adicionar ao Carrinho</a></button>
+                    <h4>Top Feminino  Adidas Clássico</h4>
+                    <div class="rating">
+                    <i class="fa-regular fa-heart"></i> 
                     </div>
-                    <p>R$200,00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-2.png" alt="" />
-                <h4>tenis you R</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa-solid fa-star-half-stroke"></i>
-                    <i class="fa-regular fa-star"></i>
+                    <p>R$79,99</p>
                 </div>
-                <p>R$950,00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/product-3.png" alt="" />
-                <h4>Calça road Z </h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-stroke"></i>
+                <div class="col-4">
+                    <img src="../Imagens/bermuda_masculina-removebg-preview.png" alt="">
+                    <button class="card-btn">Adicionar ao Carrinho</button>
+                    <h4>Bermuda Masculina Nike</h4>
+                    <div class="rating">
+                    <i class="fa-regular fa-heart"></i> 
+                    </div>
+                    <p>R$169,99</p>
                 </div>
-                <p>R$350,00</p>
-            </div>
-            <div class="product-4.png" alt="" />
-            <h4>Camiseta blue t-shirt</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            <p>R$250,00</p>
-        </div>
-    </div>
-    <!-- 2ª linha de produtos-->
-    <div class="rating">
-        <img src="images/product-5.png" alt="" />
-        <h4>tenis robot s</h4>
-        <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>R$950,00</p>
-    </div>
-       <div class="col-4">
-        <img src="images/product-6" alt="" />
-        <h4>black printed t-shirt</h4>
-        <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa-solid fa-star-half-stroke"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <p>R$197,00</p>
-       </div>
-       <div class="col-4">
-        <img src="images/product-7" alt="" />
-        <h4>meias red printed</h4>
-        <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-stroke"></i>
-        </div>
-        <p>R$17,00</p>
-       </div>
-       <div class="col-4">
-        <img src="images/product-8" alt="" />
-        <h4>Relógio men Style></h4>
-        <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        </div>
-        <P>R$4997,99</P>
-       </div>
-       <!--3ª linha de produtos-->
-       <div class="row">
-        <div class="col-4">
-            <img src="images/product-9" alt="" />
-            <h4>Relogio men Factory</h4>
-            <div class="rating">
-                
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            <p>R$8550,00</p>
-        </div>
-        <div class="col-4">
-            <img src="imagens/product-10" alt="" />
-            <h4>Tenis mountain f</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            <p>R$450,00</p>
-        </div>
-        <div class="col-4">
-            <img src="images/product-12" alt="" />
-            <h4>Calça double j slim</h4>
-            <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            <p>R$250,00</p>
-            
-        </div>
-    </div>
-   
+                <div class="col-4">
+                    <img src="../Imagens/short legging.png" alt="">
+                    <button class="card-btn">Adicionar ao Carrinho</button>
+                    <h4>Short Feminino Lupo </h4>
+                    <div class="rating">
+                    <i class="fa-regular fa-heart"></i>   
+                    </div>
+                    <p>R$30,00</p>
+                </div>
 
+                <!-- 3ª Linha de produtos -->
+                <!-- <div class="col-4">
+                    <img src="../Imagens/produto 9.png" alt="">
+                    <h4>Camiseta Esportiva
+                        Puma Masculina</h4>
+                    <div class="rating">
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star"></i> 
+                        <i class="fa fa-star"></i> 
+                        <i class="fa-regular fa-star"></i>   
+                    </div>
+                    <p>R$89,99</p>
+                </div> -->
+                
+                   
+            </div>
+<!-- ________________________________________________________________ -->
+<!-- Lista das páginas (No final da página)-->
+        <div class="page-btn">
+            <span>1</span>    
+            <span>2</span>    
+            <span>3</span>    
+            <span>4</span>    
+            <span>&#8594</span>    
+        </div>
+        </div>
     
+    <!-- ________________________________________________________________ -->
+    <!-- Footer -->
+
+    <iframe
+      src="..\footer\footer.html"
+      frameborder="0"
+      scrolling="no"
+      class="slider"
+    ></iframe>
+
+
+<script src="menu.js"></script>
 </body>
 </html>
