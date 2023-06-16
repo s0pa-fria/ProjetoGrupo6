@@ -279,3 +279,24 @@ h4 {
     border-color: #005370;
     text-decoration: none;
 }
+
+.card-btn {
+    border-radius: 5px;
+    width: 225px;
+    cursor: pointer;
+    height: 35px;
+    background-color: white;
+    border: none;
+    color: white;
+}
+
+.card-btn:hover {
+    background-color: #006C8A;
+    transition: 0.5s;
+    color: #fff;
+}
+.card-btn a{
+    text-decoration: none;
+    color: #fff;
+
+}
