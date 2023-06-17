@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nickers Sports - Pagamento</title>
-   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termos de Política e Privacidade-Nikers Sports</title>
+
+    <link rel="stylesheet" type="text/css" href="popup final.css">
+    <script src="popfinal.js"></script>
+
+    <link rel="stylesheet" href="sobre.css">
+
+    <link rel="stylesheet" href="../header/header.css">
+
+    <!-- Link para Favicon -->
+    <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
+
     <!-- Link para o CSS -->
     <link rel="stylesheet" href="pagamentos.css" />
 
-    <!-- Link para CSS -->
     <link rel="stylesheet" href="header.css">
 
-    <!-- Link para CSS -->
     <link rel="stylesheet" href="footer.css">
+    
+    <link rel="stylesheet" href="pagamentos.css">
 
-    <!-- Inserindo favicon -->
-    <link rel="shortcut icon" href="Imagens/logo.png" type="image/x-icon">
-
-     <!-- Link para fontawesome (Icones) -->
+    <!-- Link para fontawesome (Icones) -->
     <script src="https://kit.fontawesome.com/23655c98f8.js" crossorigin="anonymous"></script>
 
     <!-- Link para Iconify -->
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
 
-  </head>
+</head>
+<body>
 
 <!-- ____________________________________________________________________________ -->
 <!-- Header -->
-
-  <body>
-
     <div class="header">
       <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" width="60px" class="log"></a>
       <nav>
@@ -60,7 +64,7 @@
           <tr>
             <td>
               <div class="cart-info">
-                <img src="Imagens/calça legging.png">
+                <img src="../Imagens/calça legging.png">
                 <div>
                   <p>Calça Feminina Color Black</p>
                   <small>Preço: R$50,00</small>
@@ -77,7 +81,7 @@
           <tr>
             <td>
               <div class="cart-info">
-                <img src="Imagens/top adidas feminino.png">
+                <img src="../Imagens/top adidas feminino.png">
                 <div>
                   <p>Top Feminino Adidas Clássico</p>
                   <small>Preço: R$79,99</small>
@@ -94,7 +98,7 @@
           <tr>
             <td>
               <div class="cart-info">
-                <img src="Imagens/luva.ciclismo.png">
+                <img src="../Imagens/luva.ciclismo.png">
                 <div>
                   <p>Luva Ciclismo Aero Giyo Preta</p>
                   <small>Preço: R$20,90</small>
@@ -154,47 +158,59 @@
 
           
         </div>
-        <!-- <button type="submit" class="finalizar">Finalizar compra</button> -->
-        <a href="../Pop-up/popup final.html"><label id="finalizar-popup-btn" for="finalizar">Finalizar compra</label></a> 
+       
+        <input id="abrir-popup" name="popup" type="radio" hidden>
+        <input id="fechar-popup" name="popup" type="radio" hidden checked>
+    
+        <label id="abrir-popup-btn" for="abrir-popup">Finalizar compra</label>
+            
+    
+        
+        <div id="conteudo">
+            <img src="../Imagens/Pop up final!.png" alt="Imagem do Popup">
+            <ul id="popup-btn">
+            <a href=""></a><label id="aceito-popup-btn" for="fechar-popup"><span id="fechar">&times;</span></label>
+        </ul>
+        </nav>
         </div>
-
-<!-- ____________________________________________________________________________ -->
+        <!-- <div id="popup">
+            <img src="../Imagens/Pop up final!.png" alt="Imagem do Popup">
+            <span id="fechar">&times;</span>
+          </div>
+           -->      
+<!-- ________________________________________________________________ -->
 <!-- Footer -->
 
-<div class="footer">
-  <div class="container">
-      <div class="row">
-          <div class="footer-col-1">
-              <h3>Use o nosso App</h3>
-              <p>Baixe o aplicativo para celular Android e ios</p>
-              <div class="app-logo">
-                  <a href="#"><img src="../Imagens/play-store.png" alt=""></a>
-                  <a href="#"><img src="../Imagens/app-store.png" alt=""></a>
-              </div>
-          </div>
-          <div class="footer-col-2">
-              <a href="#"><img src="../Imagens/Logo-rodapé.png" alt=""></a>
-              <p>Nosso propósito é tornar o prazer e os benefícios<br> do esporte acessíveis a todos</p>
-          </div>
-          <div class="footer-col-4">
-              <h3>Siga-nos</h3>
-              <ul>
-                  <a href="https://pt-br.facebook.com/" target="_blank"><li>Facebook</li></a>
-                  <a href="https://twitter.com/" target="_blank"><li>Twitter</li></a>
-                  <a href="https://www.instagram.com/" target="_blank"><li>Instagram</li></a>
-                  <a href="https://www.Youtube.com/" target="_blank"><li>Youtube</li></a>
-              </ul>
-          </div>
-      </div>
-      <hr>
-      <p class="copyright">Copyright 2023 - Nikers Sports</p>
-  </div>
-</div>
-
-<!-- ____________________________________________________________________________ -->
-<!-- JS para toggle menu  -->
-
-  <script src="menu.js"></script>
+    <iframe
+      src="..\footer\footer.html"
+      frameborder="0"
+      scrolling="no"
+      class="slider"
+    ></iframe>
 
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

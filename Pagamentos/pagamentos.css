@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Geral */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ______________________________________________________________________________ */
+/* Header */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 5px;
+  color: #555;
+}
+nav ul li a:hover{
+  background-color: #ff523b;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  transition: 0.5s;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+p {
+  color: #555;
+}
+
+.header {
+  background: radial-gradient(#fff, #ffd6d6);
+}
+
+.header row {
+  margin-top: 70px;
+}
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.col-2 {
+  padding: 30px;
+  flex-basis: 50%;
+  min-width: 300px;
+}
+.col-2 img {
+  max-width: 100%;
+  padding: 50px 0;
+}
+.col-2 h1 {
+  font-size: 50px;
+  line-height: 60px;
+  margin: 25px 0;
+}
+.btn {
+  display: inline-block;
+  background: #ff523b;
+  color: #fff;
+  padding: 8px 30px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background 0.5s, color 0.3s, opacity 1s;
+}
+.btn:hover {
+  background: #563434;
+}
+
+/* ______________________________________________________________________________ */
+/* Header Responsividade (Mobile) */
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* ______________________________________________________________________________ */
+/* Pagamento do Produto detalhado (Página Pagamentos) */
+
+.cart-page {
+  margin: 80px auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #006C8A;
+  font-weight: normal;
+}
+td {
+  padding: 10px 5px;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: #005370;
+  font-size: 12px;
+}
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table {
+  border-top: 3px solid #005370;
+  width: 100%;
+  max-width: 400px;
+}
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+
+/* ______________________________________________________________________________ */
+/* Métodos de pagamento e Subtotais (Página Pagamentos) */
+
+.container-pag {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-left: 1px;
+  padding: 30px 5px;
+
+}
+.container-pag h4 {
+  color: #005370;
+  padding-bottom: 20px;
+
+}
+
+.parte {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.parte input[type="radio"] {
+  margin-right: 10px;
+}
+
+.parte label {
+  margin-right: 20px;
+  text-align: left; /* Alinha o texto à direita */
+}
+
+.iconify {
+padding: 0 15px;
+}
+.finalizar{
+  background-color:#fff;
+  text-decoration: none;
+  height: 40px;
+  margin-left: 800px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: bold;
+}
+.finalizar:hover{
+  background-color: #36678f;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+
+/* ______________________________________________________________________________ */
+/* Pop up- finalizar compra */
+#finalizar-popup-btn {
+  display: block;
+  color: white;
+  background-color: #006C8A;
+  padding: 5px 34px;
+  margin-left: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  height: 40px;
+  margin-left: 800px;
+  width: 200px;
+  font-size: larger;
+}
+#finalizar-popup-btn:hover {
+  display: block;
+  color: #006C8A;
+  background-color: #fff;
+  padding: 5px 34px;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  height: 40px;
+  margin-left: 800px;
+  width: 200px;
+  font-size: larger;
+}
+
+
+/* ______________________________________________________________________________ */
+/* Responsividade */
+
+@media screen and (max-width: 800px) {
+
+  /* Header */
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  nav ul li a{
+    color: #fff;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  /* Geral */
+  .row {
+    text-align: center;
+  }
+  .col-2, .col-3, .col-4 {
+    flex-basis: 100%;
+  }
+  /* Produto detalhado */
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 20px;
+  }
+  /* Pagamentos */
+  .cart-info p {
+    display: none;
+  }
+
+}
