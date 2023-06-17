@@ -187,10 +187,6 @@
           align-self: center;
         }
 
-        #fa-regular #fa-circle-xmark #fa-bounce{
-        font-size: 34px;
-        color: #006C8A;
-        }
 
         #abrir-popup-btn {
           display: block;
@@ -233,7 +229,7 @@
           color: #000;
           padding: 22px;
           background-color: #fff;
-          opacity: 95%;
+          /* opacity: 95%; */
           border: 2px solid #006C8A;
           border-radius: 8px;
           box-shadow: 0px 5px 15px -5px #0000003c;
@@ -269,7 +265,7 @@
         }
 /*___________________________________________________________________________________________________  */
 /* Li e concodo com os termos */
-        #conteudo2 #aceito-popup-btn2 {
+        #conteudo2 #aceito-popup-btn {
             display: block;
             color: #000;
             background-color: #006C8A;
@@ -281,7 +277,7 @@
             margin-left: 60px;
             align-items: end;
         }
-        #conteudo2 #aceito-popup-btn2:hover {
+        #conteudo2 #aceito-popup-btn:hover {
             display: block;
             color: #006C8A;
             background-color: #fff;
