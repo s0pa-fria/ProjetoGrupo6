@@ -184,6 +184,30 @@ body{
 
 
 /* ___________________________________________________________________ */
+/* Botão - Saiba Mais*/
+    #abrir-popup-btn {
+        display: block;
+        color: #000;
+        background-color: #006C8A;
+        width: fit-content;
+        padding: 12px 34px;
+        border-radius: 4px;
+        box-shadow: 0px 5px 15px -5px #20003044;
+        cursor: pointer;
+        margin-left: 50px;
+    }
+        #abrir-popup-btn:hover {
+            display: block;
+            color: #006C8A;
+            background-color: #fff;
+            width: fit-content;
+            padding: 12px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+          }
+    
+/* ___________________________________________________________________ */
 /* Responsividade*/
 
 @media screen and (max-width: 800px) {
