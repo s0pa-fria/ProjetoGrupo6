@@ -11,97 +11,105 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* ______________________________________________________________________________ */
+/* ___________________________________________________________________ */
 /* Header */
 
-.navbar {
+.navbar{
   display: flex;
   align-items: center;
   padding: 20px;
 }
-nav {
+nav{
   flex: 1;
   text-align: right;
 }
-nav ul {
+nav ul{
   display: inline-block;
   list-style-type: none;
 }
-nav ul li {
+nav ul li{
   display: inline-block;
   margin-right: 20px;
 }
-nav ul li a {
+nav ul li a{
   text-decoration: none;
   padding: 5px;
-  color: #555;
+  color: #fff;
 }
 nav ul li a:hover{
-  background-color: #ff523b;
+  background-color: #fff;
   padding: 5px;
   border-radius: 5px;
-  color: #fff;
+  color: #005370;
   transition: 0.5s;
 }
+.log{
+  margin-left: 10px;
+}
 
-a {
-  text-decoration: none;
+li a{
+  font-weight: bolder;
+  color: #555;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header{
+  background: linear-gradient(to right, #017a9baf, #005370);
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+p{
   color: #555;
 }
-p {
-  color: #555;
-}
 
-.header {
-  background: radial-gradient(#fff, #ffd6d6);
-}
-
-.header row {
-  margin-top: 70px;
-}
-.container {
+.container{
   max-width: 1300px;
   margin: auto;
   padding-left: 25px;
   padding-right: 25px;
 }
-.row {
+.row{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.col-2 {
+.col-2{
   padding: 30px;
   flex-basis: 50%;
   min-width: 300px;
 }
-.col-2 img {
+.col-2 img{
   max-width: 100%;
   padding: 50px 0;
 }
-.col-2 h1 {
+.col-2 h1{
   font-size: 50px;
   line-height: 60px;
   margin: 25px 0;
 }
-.btn {
+.btn{
   display: inline-block;
-  background: #ff523b;
+  background: #006C8A;
   color: #fff;
   padding: 8px 30px;
   margin: 30px 0;
   border-radius: 30px;
-  transition: background 0.5s, color 0.3s, opacity 1s;
+  transition: 0.5s, color 0.3s, opacity 1s;
 }
-.btn:hover {
-  background: #563434;
+.btn:hover{
+  background: #006C8A, #fff;
+  opacity: 80% #fff;
 }
 
-/* ______________________________________________________________________________ */
+
+/* ___________________________________________________________________ */
 /* Header Responsividade (Mobile) */
 
-.menu-icon {
+.menu-icon{
   width: 28px;
   margin-left: 20px;
   display: none;
@@ -223,7 +231,7 @@ padding: 0 15px;
   box-shadow: 0px 5px 15px -5px #20003044;
   cursor: pointer;
   height: 40px;
-  margin-left: 800px;
+  margin-left: 1200px;
   width: 200px;
   font-size: larger;
 }
@@ -237,7 +245,7 @@ padding: 0 15px;
   box-shadow: 0px 5px 15px -5px #20003044;
   cursor: pointer;
   height: 40px;
-  margin-left: 800px;
+  margin-left: 1200px;
   width: 200px;
   font-size: larger;
 }
