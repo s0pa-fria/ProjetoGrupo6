@@ -12,11 +12,6 @@
           display: none;
           align-self: center;
         }
-
-        #fa-regular #fa-circle-xmark #fa-bounce{
-        font-size: 34px;
-        color: #006C8A;
-        }
       
         #abrir-popup-btn {
           display: block;
