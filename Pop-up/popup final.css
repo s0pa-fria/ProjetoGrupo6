@@ -290,6 +290,34 @@ th:last-child {
 .iconify {
 padding: 0 15px;
 }
+/* ______________________________________________________________________ */
+/* Envio de encomenda */
+.entrega{
+  max-width: 960px;
+  margin: 0 auto;
+  margin-left: 1px;
+  padding: 30px 5px;
+}
+.entrega h4{
+  color: #000;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+.entrega p{
+  color: #000000a1;
+  padding-bottom: 20px;
+  font-weight: 5px;
+  font-style: italic;
+}
+.rastreio ul li{
+  color: #000000a1;
+  padding-bottom: 20px;
+  font-weight: 5px;
+}
+.rastreio ul li i{
+  font-weight: bold;
+  color: #000000a1;
+}
 .finalizar{
   background-color:#fff;
   text-decoration: none;
@@ -412,41 +440,68 @@ text-decoration: none;
 }
 
 
-/* Pop-up */
-/* ___________________________________________________________________________________________________ */
-/* Botões de abrir e fechar */
-#abrir-popup:checked ~ #conteudo img {
+/* Teste2 */
+#finalizar:checked ~ #conteudo {
   display: block;
 }
 #fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #fechar-popup-btn{
   display: none;
-  align-self: center;
-}
-#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #aceito-popup-btn{
-  display: none;
-  align-self: center;
 }
 
-#abrir-popup-btn {
+/* #abrir-popup-btn {
   display: block;
-  color: #000;
-  background-color: #006C8A;
+  color: white;
+  background-color: #a45fd2;
   width: fit-content;
   padding: 12px 34px;
   border-radius: 4px;
   box-shadow: 0px 5px 15px -5px #20003044;
   cursor: pointer;
-  margin-left: 50px;
+  top: 0;
+} */
+
+.finalizar{
+  background-color:#fff;
+  text-decoration: none;
+  height: 40px;
+  margin-left: 800px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: bold;
 }
-#abrir-popup-btn:hover {
+.finalizar:hover{
+  background-color: #36678f;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+#finalizar-popup-btn {
+  display: block;
+  color: white;
+  background-color: #006C8A;
+  padding: 5px 34px;
+  margin-left: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  height: 40px;
+  margin-left: 1200px;
+  width: 200px;
+  font-size: larger;
+}
+#finalizar-popup-btn:hover {
   display: block;
   color: #006C8A;
   background-color: #fff;
-  width: fit-content;
-  padding: 12px 34px;
-  border-radius: 4px;
+  padding: 5px 34px;
+  border-radius: 10px;
+  transition: 0.5s;
   box-shadow: 0px 5px 15px -5px #20003044;
   cursor: pointer;
+  height: 40px;
+  margin-left: 1200px;
+  width: 200px;
+  font-size: larger;
 }
 #fechar-popup-btn {
   background-color: #00000020;
@@ -455,40 +510,43 @@ text-decoration: none;
   left: 0;
   width: 100vw;
   height: 100vh;
+  
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+
+  
 }
-/*_____________________________________________________________________________  */
-#conteudo image{
+
+
+
+#conteudo {
   box-sizing: border-box;
-  position: fixed;
-  width: min(500px, 90vw);
+  position: relative;
+  width: 500px, 90vw;
   height: 300px;
-  left: max(calc(50vw - 380px / 2), 4vw);
-  top: calc(50vh - 80px);
-  color: #000;
-  padding: 22px;
-  background-color: #fff;
-  opacity: 95%;
+  left: 80px;
+  top: 0px;
+  
+  /* padding: 22px; */
+  /* background-color: #fff; */
   border: 2px solid #006C8A;
-  border-radius: 8px;
+  border-radius: 2px;
   box-shadow: 0px 5px 15px -5px #0000003c;
 }
 
+#conteudo img{
+  width: 714.5px;
+  height: 1000px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  overflow-clip-margin: content-box;
+  overflow: clip;
 
-
-/* Chat gepeto */
-
-#popup img {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-#close {
+/* Chat gepeto */
+#close span {
   position: absolute;
   top: 10px;
   right: 10px;
