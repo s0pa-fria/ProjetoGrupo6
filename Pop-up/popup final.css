@@ -68,7 +68,7 @@ align-items: center;
 
 body .titulo{
 font-family: 'Anton', sans-serif;
-font-weight: 200;
+font-weight: 200px;
 }
 body .paragrafo{
 font-family: 'Harmattan', sans-serif;
@@ -238,24 +238,7 @@ th:last-child {
   text-align: right;
 }
 
-#popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    border: 1px solid black;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  #fechar {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    cursor: pointer;
-  }
+
 /* ______________________________________________________________________________ */
 /* Métodos de pagamento e Subtotais (Página Pagamentos) */
 
@@ -297,6 +280,9 @@ padding: 0 15px;
   margin: 0 auto;
   margin-left: 1px;
   padding: 30px 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
 }
 .entrega h4{
   color: #000;
@@ -318,7 +304,61 @@ padding: 0 15px;
   font-weight: bold;
   color: #000000a1;
 }
-.finalizar{
+.rastreio a{
+  text-decoration: none;
+  background-color: #006C8A;
+  color: #fff;
+  padding: 5px;
+}
+/* ___________________________________________________________________ */
+/* Funções POP UP */
+#abrir-popup:checked ~ #conteudo {
+  display: block;
+}
+#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #close{
+  display: none;
+  align-self: center;
+}
+#abrir-popup-btn {
+  display: block;
+  color: #000;
+  background-color: #006C8A;
+  width: fit-content;
+  padding: 12px 34px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  margin-left: 50px;
+}
+#abrir-popup-btn:hover {
+  display: block;
+  color: #006C8A;
+  background-color: #fff;
+  width: fit-content;
+  padding: 12px 34px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+}
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#abrir-popup{
   background-color:#fff;
   text-decoration: none;
   height: 40px;
@@ -327,13 +367,13 @@ padding: 0 15px;
   width: 200px;
   font-weight: bold;
 }
-.finalizar:hover{
+#abrir-popupr:hover{
   background-color: #36678f;
   transition: 0.5s;
   color: white;
   cursor: pointer;
 }
-#finalizar-popup-btn {
+#abrir-popup-btn {
   display: block;
   color: white;
   background-color: #006C8A;
@@ -347,7 +387,7 @@ padding: 0 15px;
   width: 200px;
   font-size: larger;
 }
-#finalizar-popup-btn:hover {
+#abrir-popup-btn:hover {
   display: block;
   color: #006C8A;
   background-color: #fff;
@@ -361,7 +401,32 @@ padding: 0 15px;
   width: 200px;
   font-size: larger;
 }
+#conteudo {
+    box-sizing: border-box;
+    position: fixed;
+    width: 300pxmin;
+    height: (500px, 90vw);
+    left: max(calc(50vw - 380px / 2), 4vw);
+    top: calc(50vh - 80px);
+    color: #000;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid #006C8A;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px -5px #0000003c;
+    margin-left: 200px;
+    align-items: center;
+    justify-items: center;
 
+  }
+
+#conteudo img{
+  width: 500px, 90vw;
+  height: 500px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  box-sizing: border-box;
+  
+}
 
 /* ___________________________________________________________________ */
 /* Responsividade*/
@@ -460,98 +525,11 @@ text-decoration: none;
   top: 0;
 } */
 
-.finalizar{
-  background-color:#fff;
-  text-decoration: none;
-  height: 40px;
-  margin-left: 800px;
-  border-radius: 10px;
-  width: 200px;
-  font-weight: bold;
-}
-.finalizar:hover{
-  background-color: #36678f;
-  transition: 0.5s;
-  color: white;
-  cursor: pointer;
-}
-#finalizar-popup-btn {
-  display: block;
-  color: white;
-  background-color: #006C8A;
-  padding: 5px 34px;
-  margin-left: 800px;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px -5px #20003044;
-  cursor: pointer;
-  height: 40px;
-  margin-left: 1200px;
-  width: 200px;
-  font-size: larger;
-}
-#finalizar-popup-btn:hover {
-  display: block;
-  color: #006C8A;
-  background-color: #fff;
-  padding: 5px 34px;
-  border-radius: 10px;
-  transition: 0.5s;
-  box-shadow: 0px 5px 15px -5px #20003044;
-  cursor: pointer;
-  height: 40px;
-  margin-left: 1200px;
-  width: 200px;
-  font-size: larger;
-}
-#fechar-popup-btn {
-  background-color: #00000020;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-
-  
-}
 
 
 
-#conteudo {
-  box-sizing: border-box;
-  position: relative;
-  width: 500px, 90vw;
-  height: 300px;
-  left: 80px;
-  top: 0px;
-  
-  /* padding: 22px; */
-  /* background-color: #fff; */
-  border: 2px solid #006C8A;
-  border-radius: 2px;
-  box-shadow: 0px 5px 15px -5px #0000003c;
-}
 
-#conteudo img{
-  width: 714.5px;
-  height: 1000px;
-  box-shadow: 0px 5px 15px -5px #20003044;
-  overflow-clip-margin: content-box;
-  overflow: clip;
 
-}
-
-/* Chat gepeto */
-#close span {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-}
 
 
 
