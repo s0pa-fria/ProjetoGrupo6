@@ -186,7 +186,7 @@ h4{
     -webkit-filter: grayscale(0%);
 }
 .img-btn:hover{
-    -webkit-filter:brightness(80%);
+    -webkit-filter: brightness(80%) ;
 }
 h3{
     font-weight: lighter;
@@ -248,15 +248,6 @@ h3{
   }
 
   .pesquisa {
-    margin-left: 150px;
-    border-radius: 20px;
-    height: 30px;
-    width: 200px;
-    border-color: #005370;
-    text-decoration: none;
-}
-
-.pesquisa {
     margin-left: 120px;
 }
 
