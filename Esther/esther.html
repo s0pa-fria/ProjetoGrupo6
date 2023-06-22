@@ -8,7 +8,7 @@
 
     <!-- Link para CSS -->
     <link rel="stylesheet" href="roupas.css">
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!-- Link para Favicon -->
     <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
 
@@ -21,7 +21,11 @@
 
      <div class="header">
         <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" class="log"></a>
-        <input type="search" name="Pesquisar" placeholder="Pesquisar..."  class="pesquisa">
+        <div class="pesquisa">
+            <input placeholder='Pesquisar...'/>
+            <button><a href=""><iconify-icon icon="ic:baseline-search" class="iconify"></iconify-icon></a></button>
+        </div>
+
         <nav>
             <ul id="MenuItems">
                 <li><a href="../Soph/home.html">Home</a></li>
@@ -36,7 +40,7 @@
 <!-- ________________________________________________________________ -->
 <!-- Produtos -->
         <div class="small-container">
-            <h2>Todos os Produtos</h2>
+            <h2 class="product-category">Todos os Produtos</h2>
             <!-- ÁNosso propósito é tornar o prazer e os benefícios
                 do esporte acessíveis a todosrea do filtro -->
             <div class="row row-2">

@@ -9,14 +9,18 @@
 
     <link rel="stylesheet" href="oferecemos.css">
     <link rel="stylesheet" href="../header/header.css">
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <!-- Link para Favicon -->
     <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="header">
         <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" width="60px" class="log"></a>
-        <input type="search" name="Pesquisar" placeholder="Pesquisar..."  class="pesquisa">
+        <div class="pesquisa">
+          <input placeholder='Pesquisar...'/>
+          <button><a href=""><iconify-icon icon="ic:baseline-search" class="iconify"></iconify-icon></a></button>
+      </div>
+
         <nav>
             <ul id="MenuItems">
                 <li><a href="../Soph/home.html">Home</a></li>
@@ -32,7 +36,7 @@
     <!-- Cards -->
 
     <section>
-        <h1>O que oferecemos</h1>
+        <h2 class="product-category">O que oferecemos</h2>
         <p>Estamos preparando algo especial para você</p>
         
         <div class="fotos">
