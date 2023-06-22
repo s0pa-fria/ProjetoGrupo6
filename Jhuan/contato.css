@@ -131,5 +131,28 @@ iframe {
     }
   
  }
-  
+
+ .pesquisa {
+    margin-left: 120px;
+}
+
+.pesquisa button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 8px 85px;
+}
+
+.pesquisa .iconify{
+    color: black;
+}
  

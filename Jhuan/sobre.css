@@ -152,27 +152,7 @@ body{
         margin-top: -10000px;
     }
 
-    button {
-        border: none;
-        background-color: #006C8A;
-        color: #fff;
-        padding: 8px;
-        text-decoration: none;
-        margin-left: 45px;
-        cursor: pointer;
-    }
-    button a {
-        color: #000;
-        background-color: #fff;
-        padding: 8px;
-        text-decoration: none;
-
-    }
-    button a:hover {
-        background-color: #006C8A;
-        color: #fff;
-
-    }
+   
     iframe {
         width: 100%;
         height: 300px;
@@ -181,6 +161,33 @@ body{
     .destaque {
         background-color: #111;
     }
+
+
+/* ___________________________________________________________________ */
+/* Botão - Saiba Mais*/
+    #abrir-popup-btn {
+        display: block;
+        color: #000;
+        background-color: #006C8A;
+        width: fit-content;
+        padding: 12px 34px;
+        border-radius: 4px;
+        box-shadow: 0px 5px 15px -5px #20003044;
+        cursor: pointer;
+        margin-left: 50px;
+    }
+        #abrir-popup-btn:hover {
+            display: block;
+            color: #006C8A;
+            background-color: #fff;
+            width: fit-content;
+            padding: 12px 34px;
+            border-radius: 4px;
+            box-shadow: 0px 5px 15px -5px #20003044;
+            cursor: pointer;
+          }
+        
+    
 /* ___________________________________________________________________ */
 /* Responsividade*/
 
@@ -218,3 +225,27 @@ body{
 
   
  }
+
+ .pesquisa {
+    margin-left: 120px;
+}
+
+.pesquisa button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 8px 85px;
+}
+
+.pesquisa .iconify{
+    color: black;
+}

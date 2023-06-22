@@ -186,7 +186,7 @@ h4{
     -webkit-filter: grayscale(0%);
 }
 .img-btn:hover{
-    -webkit-filter:brightness(80%);
+    -webkit-filter: brightness(80%) ;
 }
 h3{
     font-weight: lighter;
@@ -246,3 +246,27 @@ h3{
     }
   
   }
+
+  .pesquisa {
+    margin-left: 120px;
+}
+
+.pesquisa button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 8px 85px;
+}
+
+.pesquisa .iconify{
+    color: black;
+}

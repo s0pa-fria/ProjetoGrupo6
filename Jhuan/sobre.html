@@ -7,20 +7,34 @@
     <title>Nikers Sports-Sobre a nossa empresa</title>
     
     <link rel="stylesheet" href="sobre.css">
-
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <link rel="stylesheet" href="../header/header.css">
+
     <!-- Link para Favicon -->
     <link rel="shortcut icon" href="../Imagens/logo.png" type="image/x-icon">
+
+    <!-- Link para fontawesome (Icones) -->
+    <script src="https://kit.fontawesome.com/23da1496ca.js" crossorigin="anonymous"></script>
+
+    <!-- Link para CSS e JS -Pop up -->
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <script src="pop.js"></script>
+
 </head>
 <body>
     <div class="header">
         <a href="../Soph/home.html"><img src="../Imagens/logo.png" alt="logo" width="60px" class="log"></a>
+        <div class="pesquisa">
+          <input placeholder='Pesquisar...'/>
+          <button><a href=""><iconify-icon icon="ic:baseline-search" class="iconify"></iconify-icon></a></button>
+      </div>
+
         <nav>
             <ul id="MenuItems">
                 <li><a href="../Soph/home.html">Home</a></li>
                 <li><a href="../Jhuan/oferecemos.html">Visão Geral</a></li>
                 <li><a href="../Jhuan/sobre.html">Sobre Nós</a></li>
-                <li><a href="../Jhuan/contato.html">Contato</a></li>
+                <li><a href="../Theus/faleConosco.html">Fale Conosco</a></li>
                 <li><a href="../Theus/matheus.html">Login</a></li>
             </ul>
         </nav>
@@ -29,20 +43,21 @@
     <div class="destaque">
         <h1 class="titulo">Sobre a nossa <br> empresa</h1>
         <p class="paragrafo">Fundada em Janeiro de 2013 no leste <br>
-            de São Paulo, Nickers Sports cresceu e se <br>
+            de São Paulo, Nikers Sports cresceu e se <br>
             tornou uma das maiores marcas de esportes <br>
             do país com milhões de clientes satisfeitos. <br>
             Começando com um empréstimo pequeno, um <br>
             computador alugado e poucos artigos para <br>
             vendas. Os fundadores transformaram a <br>
-            Nickers Sport em uma empresa revolucionária cuja as <br>
+            Nikers Sport em uma empresa revolucionária cuja as <br>
             inovações ajudaram a moldar o setor <br>
             esportivo
             </p>
+        <a href="../Pop-up/popup.html"><label id="abrir-popup-btn" for="abrir-popup">Saiba Mais</label></a>
         
-        <button class="botao"><a href="">Saiba mais</a></button>
+        <!-- <button class="botao"><a href="">Saiba mais</a></button> -->
         <div>
-        <img src="image 1 (1).png" alt="" class="imagem">
+        <img src="../Imagens/Sobre nós.png" alt="" class="imagem">
         </div>
     </div>
 
@@ -57,9 +72,5 @@
     ></iframe>
 
 
-</body>
-</html>
-    
-    
 </body>
 </html>
