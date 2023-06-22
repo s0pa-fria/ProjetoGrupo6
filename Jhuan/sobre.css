@@ -119,6 +119,15 @@ body .paragrafo{
     margin-left: 20px;
     display: none;
 }
+
+#MenuItems {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#oii:hover {
+    background-color: #005370;
+}
 /* _____________________________________________________________________ */
 body{
 

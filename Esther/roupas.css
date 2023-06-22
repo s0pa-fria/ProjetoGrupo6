@@ -46,6 +46,15 @@ nav ul li a:hover{
     color: #005370;
     transition: 0.5s;
 }
+
+#MenuItems {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#oii:hover {
+    background-color: #005370;
+}
 .log{
     width:60px;
     height:60px;
@@ -56,6 +65,11 @@ li a{
     font-weight: bolder;
     color: #555;
     font-family: 'Poppins', sans-serif;
+}
+li a.iconify{
+    width: 24px;
+    height: 24px;
+    margin-right: 60px;
 }
 
 .header{
@@ -168,6 +182,7 @@ iframe {
     color: #000;
 }
 
+
 /* ___________________________________________________________________ */
 /* Header Responsividade (Mobile) */
 
@@ -176,6 +191,7 @@ iframe {
     margin-left: 20px;
     display: none;
 }
+
 
 /* ___________________________________________________________________ */
 /* Produtos */

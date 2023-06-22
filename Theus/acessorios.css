@@ -214,6 +214,15 @@
     margin-bottom: 10px;
 }
 
+#MenuItems {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#oii:hover {
+    background-color: #005370;
+}
+
 /* ___________________________________________________________________ */
 /* Footer*/
 .footer{

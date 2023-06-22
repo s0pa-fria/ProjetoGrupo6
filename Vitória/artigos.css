@@ -176,6 +176,14 @@ iframe {
     margin-left: 20px;
     display: none;
 }
+#MenuItems {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#oii:hover {
+    background-color: #005370;
+}
 
 /* ___________________________________________________________________ */
 /* Produtos */

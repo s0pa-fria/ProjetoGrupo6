@@ -126,6 +126,15 @@ iframe {
     font-weight: lighter;
   }
 
+  #MenuItems {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#oii:hover {
+    background-color: #005370;
+}
+
   /* Título padrão */
   .product-category {
     padding: 0 10vw;
