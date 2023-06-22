@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Obrigado pela compra-Nikers Sports</title>
    
-    <link rel="stylesheet" type="text/css" href="popup final.css">
+    <link rel="stylesheet" type="text/css" href="popup-final.css">
     <script src="popfinal.js"></script>
 
 
     <!-- Link para o CSS -->
-    <link rel="stylesheet" href="popup final.css" />
+    <link rel="stylesheet" href="popup-final.css" />
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <!-- Inserindo favicon -->
@@ -108,27 +108,36 @@
 <!--  Métodos de pagamento e Subtotais -->
         
         <div class="total-price">
+<!-- ____________________________________________________________________________ -->
+<!-- Entregas -->
+<div class="entrega">
+  <h4>Datas de entrega estimados</h4>
+  <p>Aproximadamente. 29 Junho 2023 ~ 02 Julho 2023</p>
+  <div class="rastreio">
+    <ul>
+      <li>21/06 - 10:20hr  <i>Pedido efetuado</i></li>
+      <li>21/06 - 13:01hr <i>Armazém  Aguardando Inspeção final</i></li>
+      <li>24/06 - 06:40hr <i>Pedido Enviado</i></li>
+      <li>24/06 - 15:45hr <i>SP Objeto Postado</i></li>
+      <li>30/06 - 12:13hr <i>Pedido Entregue.</i></li>
+      <!-- <p>Faça bom proveito</p> -->
+    </ul>
+    <a href="https://rastreamento.correios.com.br/app/index.php">Rastrear encomenda <br></a>
+    <p>Cód: S0S00O20231DEBR</p>
+  </div>
+</div>
+      
 
-          <!-- Métodos de pagamento -->
-          <div class="container-pag">
-            <h4>Formas de Pagamento</h4>
-            <div class="parte">
-              <input type="radio" name="metodo" value="pix">
-              <span class="iconify" data-icon="simple-icons:pix" style="color: #00b7a9;" data-width="58" data-height="58"></span>
-              <label for="pix">Pix</label>
-            </div>
-            <div class="parte">
-              <input type="radio" name="metodo" value="cartao">
-              <span class="iconify" data-icon="ph:credit-card-fill" style="color: #d4af37;" data-width="58" data-height="58"></span>
-              <label for="cartao">Cartão</label>
-            </div>
-            <div class="parte">
-              <input type="radio" name="metodo" value="boleto">
-              <span class="iconify" data-icon="icon-park-solid:id-card" style="color: #333;" data-width="58" data-height="58"></span>
-        
-              <label for="boleto">Boleto</label>
-            </div>
-          </div>
+ <input id="abrir-popup" name="popup" type="radio" hidden>
+ <input id="fechar-popup" name="popup" type="radio" hidden checked>
+ 
+ 
+ <div id="conteudo">
+  <img src="../Imagens/Pop up final!.png" alt="">
+</div>
+
+
+ <label id="fechar-popup-btn" for="fechar-popup"><span id="close">&times;</span></label>
 
           <!-- Subtotais -->
           <table>
@@ -153,38 +162,9 @@
         </div>
 
 
-        <a href="../Pop-up/popup final.html"><label id="abrir-popup-btn" for="abrir-popup">Finalizar compra</label></a> 
-
-<!-- ____________________________________________________________________________ -->
-<!-- Entregas -->
-<div class="entrega">
-  <h4>Datas de entrega estimados</h4>
-  <p>Aproximadamente. 29 Junho 2023 ~ 02 Julho 2023</p>
-  <div class="rastreio">
-    <a href="https://rastreamento.correios.com.br/app/index.php">Rastrear encomenda <br></a>
-    <p>Cód: S0S00O20231DEBR</p>
-    <ul>
-      <li>21/06 - 10:20hr  <i>Pedido efetuado</i></li>
-      <li>21/06 - 13:01hr <i>Armazém  Aguardando Inspeção final</i></li>
-      <li>24/06 - 06:40hr <i>Pedido Enviado</i></li>
-      <li>24/06 - 15:45hr <i>SP Objeto Postado</i></li>
-      <li>30/06 - 12:13hr <i>Pedido Entregue.</i></li>
-      <!-- <p>Faça bom proveito</p> -->
-    </ul>
-  </div>
-</div>
-      
-
- <input id="abrir-popup" name="popup" type="radio" hidden>
- <input id="fechar-popup" name="popup" type="radio" hidden checked>
- 
- 
- <div id="conteudo">
-  <img src="../Imagens/Pop up final!.png" alt="">
-</div>
+        <a href="../Pop-up/popup-final.html"><label id="abrir-popup-btn" for="abrir-popup">Finalizar compra</label></a> 
 
 
- <label id="fechar-popup-btn" for="fechar-popup"><span id="close">&times;</span></label>
  
  
  
