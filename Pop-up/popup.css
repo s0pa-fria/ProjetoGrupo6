@@ -75,7 +75,7 @@
             border-radius: 4px;
             box-shadow: 0px 5px 15px -5px #20003044;
             cursor: pointer;
-            margin-left: 60px;
+            /* margin-left: 60px; */
             align-items: end;
         }
     
@@ -89,6 +89,11 @@
             box-shadow: 0px 5px 15px -5px #20003044;
             cursor: pointer;
         }
+        #popup-btn {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
 /*___________________________________________________________________________________________________  */
 /* Li e concodo com os termos */
         #conteudo #aceito-popup-btn {
@@ -100,7 +105,7 @@
             border-radius: 4px;
             box-shadow: 0px 5px 15px -5px #20003044;
             cursor: pointer;
-            margin-left: 60px;
+            /* margin-left: 60px; */
             align-items: end;
         }
         #conteudo #aceito-popup-btn:hover {
@@ -144,7 +149,7 @@
           border-radius: 4px;
           box-shadow: 0px 5px 15px -5px #20003044;
           cursor: pointer;
-          margin-left: 50px;
+          /* margin-left: 50px; */
         }
         #abrir-popup-btn:hover {
           display: block;
@@ -196,7 +201,7 @@
             border-radius: 4px;
             box-shadow: 0px 5px 15px -5px #20003044;
             cursor: pointer;
-            margin-left: 60px;
+            /* margin-left: 60px; */
             align-items: end;
         }
     
