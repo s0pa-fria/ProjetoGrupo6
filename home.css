@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap');
+
+/* ___________________________________________________________________ */
+/* Geral */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Anton', sans-serif;
+}
+
+/* ___________________________________________________________________ */
+/* Header */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    color: #005370;
+    transition: 0.5s;
+}
+.log{
+    margin-left: 10px;
+}
+
+li a{
+    font-weight: bolder;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    background: linear-gradient(to right, #017a9baf, #005370);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    padding: 30px;
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #006C8A;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5s, color 0.3s, opacity 1s;
+}
+.btn:hover{
+    background: #006C8A, #fff;
+    opacity: 80% #fff;
+}
+
+
+/* ___________________________________________________________________ */
+/* Header Responsividade (Mobile) */
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* ___________________________________________________________________ */
+/* Slides*/
+
+.slider {
+    width: 100%;
+    height: 60vh;
+    margin-top: 20px;
+}
+
+/* ___________________________________________________________________ */
+/* Categorias*/
+.linha {
+    width: 1000px;
+    border: none;
+    background: #000000;
+    height: 1px;
+    margin: 20px 270px;
+    padding-left: 10px;
+}
+.titulo{
+    text-align: center;
+    position: relative;
+    color: #000;
+    margin: 0 auto 80px;
+    line-height: 60px;
+    font-family: 'Anton', sans-serif;
+
+
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.categories{
+    margin: 70px 0;
+}
+
+.col-3{
+    box-sizing: border-box;
+    flex-basis: 20%;
+    min-width: 50px;
+    margin-bottom: 50px;
+    margin-left: 72px;
+}
+
+.col-3 img{
+    width: 70%;
+    -webkit-filter: grayscale(0%);
+}
+.img-btn:hover{
+    -webkit-filter: brightness(80%) ;
+}
+h3{
+    font-weight: lighter;
+}
+
+
+/* ___________________________________________________________________ */
+/* Responsividade*/
+
+@media screen and (max-width: 800px) {
+
+    /* Header */
+    nav ul {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background: linear-gradient(to right, #017a9baf, #005370);
+      width: 100%;
+      overflow: hidden;
+      transition: max-height 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    nav ul li a{
+      color: #fff;
+    }
+    .slider {
+        width: 100%;
+        margin-top: 200px;
+    }
+  
+ }
+  
+  @media screen and (max-width: 600px) {
+    /* Geral */
+    .row {
+      text-align: center;
+    }
+    .col-2, .col-3, .col-4 {
+      flex-basis: 100%;
+    }
+    /* Produto detalhado */
+    .single-product .row {
+      text-align: left;
+    }
+    .single-product .col-2 {
+      padding: 20px 0;
+    }
+    .single-product h1 {
+      font-size: 26px;
+      line-height: 32px;
+      padding-bottom: 20px;
+    }
+  
+  }
+
+  .pesquisa {
+    margin-left: 120px;
+}
+
+.pesquisa button {
+    padding: 8px 10px;
+    border: none;
+    background-color: #D9D9D9;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    border-radius: 5px;
+    background-color: #D9D9D9;
+    border: none;
+    padding: 8px 85px;
+}
+
+.pesquisa .iconify{
+    color: black;
+}
