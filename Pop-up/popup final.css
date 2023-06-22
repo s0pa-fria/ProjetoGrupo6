@@ -188,7 +188,7 @@ iframe {
 /* Pagamento do Produto detalhado (Página Pagamentos) */
 
 .cart-page {
-  margin: 80px auto;
+  margin: 0px auto;
 }
 table {
   width: 100%;
@@ -350,7 +350,9 @@ padding: 0 15px;
   border: 1px solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-
+#cloe{
+  margin-bottom: 50px;
+}
 #fechar {
   position: absolute;
   top: 10px;
@@ -427,6 +429,15 @@ padding: 0 15px;
   box-sizing: border-box;
   
 }
+/* Teste2 */
+#finalizar:checked ~ #conteudo {
+  display: block;
+}
+#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #fechar-popup-btn{
+  display: none;
+}
+
+
 
 /* ___________________________________________________________________ */
 /* Responsividade*/
@@ -503,45 +514,3 @@ width: 200px;
 border-color: #005370;
 text-decoration: none;
 }
-
-
-/* Teste2 */
-#finalizar:checked ~ #conteudo {
-  display: block;
-}
-#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #fechar-popup-btn{
-  display: none;
-}
-
-/* #abrir-popup-btn {
-  display: block;
-  color: white;
-  background-color: #a45fd2;
-  width: fit-content;
-  padding: 12px 34px;
-  border-radius: 4px;
-  box-shadow: 0px 5px 15px -5px #20003044;
-  cursor: pointer;
-  top: 0;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
