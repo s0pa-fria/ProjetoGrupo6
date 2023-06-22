@@ -1,0 +1,547 @@
+
+/* Contéudo da páina que será sobreposta com o popup */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=family=Anton&family=Montserrat&family=Noto+Serif&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prompt&display=swap');
+
+/* ___________________________________________________________________ */
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Anton', sans-serif;
+  }
+  
+/* ___________________________________________________________________ */
+/* Header */
+
+.navbar{
+display: flex;
+align-items: center;
+padding: 20px;
+}
+nav{
+flex: 1;
+text-align: right;
+}
+nav ul{
+display: inline-block;
+list-style-type: none;
+}
+nav ul li{
+display: inline-block;
+margin-right: 20px;
+}
+nav ul li a{
+text-decoration: none;
+padding: 5px;
+color: #fff;
+}
+nav ul li a:hover{
+background-color: #fff;
+padding: 5px;
+border-radius: 5px;
+color: #005370;
+transition: 0.5s;
+}
+.log{
+margin-left: 10px;
+}
+
+li a{
+font-weight: bolder;
+color: #555;
+font-family: 'Poppins', sans-serif;
+}
+
+.header{
+background: linear-gradient(to right, #017a9baf, #005370);
+height: 100px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+body .titulo{
+font-family: 'Anton', sans-serif;
+font-weight: 200px;
+}
+body .paragrafo{
+font-family: 'Harmattan', sans-serif;
+}
+
+.container{
+max-width: 1300px;
+margin: auto;
+padding-left: 25px;
+padding-right: 25px;
+}
+.row{
+display: flex;
+align-items: center;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+.col-2{
+padding: 30px;
+flex-basis: 50%;
+min-width: 300px;
+}
+.col-2 img{
+max-width: 100%;
+padding: 50px 0;
+}
+.col-2 h1{
+font-size: 50px;
+line-height: 60px;
+margin: 25px 0;
+}
+.btn{
+display: inline-block;
+background: #ff523b;
+color: #fff;
+padding: 8px 30px;
+margin: 30px 0;
+border-radius: 30px;
+transition: 0.5s, color 0.3s, opacity 1s;
+}
+.btn:hover{
+background: #006C8A, #fff;
+opacity: 80% #fff;
+}
+
+/* ___________________________________________________________________ */
+/* Header Responsividade (Mobile) */
+
+.menu-icon{
+width: 28px;
+margin-left: 20px;
+display: none;
+}
+/* _____________________________________________________________________ */
+body{
+
+color: black;
+}
+
+.paragrafo{
+  font-size: 30px;
+  line-height: 50px;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.titulo{
+color: #006C8A;
+font-size: 50px;
+margin-left: 50px;
+}
+
+.botao{
+background-color: black;
+color: white;
+font-family: 'Harmattan', sans-serif;
+font-weight: 700;
+}
+
+.imagem{
+  margin-left: 800px;
+  height: 458px;
+  width: 578px;
+  margin-top: -10000px;
+}
+
+button {
+  border: none;
+  background-color: #006C8A;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+  margin-left: 45px;
+  cursor: pointer;
+}
+button a {
+  color: #000;
+  background-color: #fff;
+  padding: 8px;
+  text-decoration: none;
+
+}
+button a:hover {
+  background-color: #006C8A;
+  color: #fff;
+
+}
+iframe {
+  width: 100%;
+  height: 300px;
+
+}
+.destaque {
+  background-color: #111;
+}
+/* ______________________________________________________________________________ */
+/* Pagamento do Produto detalhado (Página Pagamentos) */
+
+.cart-page {
+  margin: 80px auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cart-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  color: #fff;
+  background: #006C8A;
+  font-weight: normal;
+}
+td {
+  padding: 10px 5px;
+}
+td input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+}
+td a {
+  color: #005370;
+  font-size: 12px;
+}
+td img {
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.total-price {
+  display: flex;
+  justify-content: flex-end;
+}
+.total-price table {
+  border-top: 3px solid #005370;
+  width: 100%;
+  max-width: 400px;
+}
+td:last-child {
+  text-align: right;
+}
+th:last-child {
+  text-align: right;
+}
+
+
+/* ______________________________________________________________________________ */
+/* Métodos de pagamento e Subtotais (Página Pagamentos) */
+
+.container-pag {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-left: 1px;
+  padding: 30px 5px;
+
+}
+.container-pag h4 {
+  color: #005370;
+  padding-bottom: 20px;
+
+}
+
+.parte {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.parte input[type="radio"] {
+  margin-right: 10px;
+}
+
+.parte label {
+  margin-right: 20px;
+  text-align: left; /* Alinha o texto à direita */
+}
+
+.iconify {
+padding: 0 15px;
+}
+/* ______________________________________________________________________ */
+/* Envio de encomenda */
+.entrega{
+  max-width: 960px;
+  margin: 0 auto;
+  margin-left: 1px;
+  padding: 30px 5px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+.entrega h4{
+  color: #000;
+  padding-bottom: 20px;
+  font-weight: lighter;
+}
+.entrega p{
+  color: #000000a1;
+  padding-bottom: 20px;
+  font-weight: 5px;
+  font-style: italic;
+}
+.rastreio ul li{
+  color: #000000a1;
+  padding-bottom: 20px;
+  font-weight: 5px;
+}
+.rastreio ul li i{
+  font-weight: bold;
+  color: #000000a1;
+}
+.rastreio a{
+  text-decoration: none;
+  background-color: #006C8A;
+  color: #fff;
+  padding: 5px;
+}
+/* ___________________________________________________________________ */
+/* Funções POP UP */
+#abrir-popup:checked ~ #conteudo {
+  display: block;
+}
+#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #close{
+  display: none;
+  align-self: center;
+}
+#abrir-popup-btn {
+  display: block;
+  color: #000;
+  background-color: #006C8A;
+  width: fit-content;
+  padding: 12px 34px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  margin-left: 50px;
+}
+#abrir-popup-btn:hover {
+  display: block;
+  color: #006C8A;
+  background-color: #fff;
+  width: fit-content;
+  padding: 12px 34px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+}
+#popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid black;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#fechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#abrir-popup{
+  background-color:#fff;
+  text-decoration: none;
+  height: 40px;
+  margin-left: 800px;
+  border-radius: 10px;
+  width: 200px;
+  font-weight: bold;
+}
+#abrir-popupr:hover{
+  background-color: #36678f;
+  transition: 0.5s;
+  color: white;
+  cursor: pointer;
+}
+#abrir-popup-btn {
+  display: block;
+  color: white;
+  background-color: #006C8A;
+  padding: 5px 34px;
+  margin-left: 800px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  height: 40px;
+  margin-left: 1200px;
+  width: 200px;
+  font-size: larger;
+}
+#abrir-popup-btn:hover {
+  display: block;
+  color: #006C8A;
+  background-color: #fff;
+  padding: 5px 34px;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  height: 40px;
+  margin-left: 1200px;
+  width: 200px;
+  font-size: larger;
+}
+#conteudo {
+    box-sizing: border-box;
+    position: fixed;
+    width: 300pxmin;
+    height: (500px, 90vw);
+    left: max(calc(50vw - 380px / 2), 4vw);
+    top: calc(50vh - 80px);
+    color: #000;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid #006C8A;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px -5px #0000003c;
+    margin-left: 200px;
+    align-items: center;
+    justify-items: center;
+
+  }
+
+#conteudo img{
+  width: 500px, 90vw;
+  height: 500px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  box-sizing: border-box;
+  
+}
+
+/* ___________________________________________________________________ */
+/* Responsividade*/
+
+@media screen and (max-width: 800px) {
+
+/* Header */
+nav ul {
+position: absolute;
+top: 100px;
+left: 0;
+background: linear-gradient(to right, #017a9baf, #005370);;
+width: 100%;
+overflow: hidden;
+transition: max-height 0.5s;
+}
+nav ul li {
+display: block;
+margin-right: 50px;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+nav ul li a{
+color: #fff;
+}
+.menu-icon {
+  display: block;
+  cursor: pointer;
+}
+iframe {
+  width: 100%;
+  height: 600px;
+}
+.destaque {
+  margin-top: 180px;
+}
+.imagem {
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  /* Geral */
+  .row {
+    text-align: center;
+  }
+  .col-2, .col-3, .col-4 {
+    flex-basis: 100%;
+  }
+  /* Produto detalhado */
+  .single-product .row {
+    text-align: left;
+  }
+  .single-product .col-2 {
+    padding: 20px 0;
+  }
+  .single-product h1 {
+    font-size: 26px;
+    line-height: 32px;
+    padding-bottom: 20px;
+  }
+  /* Pagamentos */
+  .cart-info p {
+    display: none;
+  }
+
+}
+.pesquisa {
+margin-left: 150px;
+border-radius: 20px;
+height: 30px;
+width: 200px;
+border-color: #005370;
+text-decoration: none;
+}
+
+
+/* Teste2 */
+#finalizar:checked ~ #conteudo {
+  display: block;
+}
+#fechar-popup:checked ~ #conteudo, #fechar-popup:checked ~ #fechar-popup-btn{
+  display: none;
+}
+
+/* #abrir-popup-btn {
+  display: block;
+  color: white;
+  background-color: #a45fd2;
+  width: fit-content;
+  padding: 12px 34px;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px -5px #20003044;
+  cursor: pointer;
+  top: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

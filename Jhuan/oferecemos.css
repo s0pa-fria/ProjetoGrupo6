@@ -125,7 +125,18 @@ iframe {
   h2{
     font-weight: lighter;
   }
-  
+
+  /* Título padrão */
+  .product-category {
+    padding: 0 10vw;
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+    text-align: center;
+    color: #006C8A;
+    font-family: 'anton';
+}
   /* ___________________________________________________________________ */
   /* Responsividade*/
 
